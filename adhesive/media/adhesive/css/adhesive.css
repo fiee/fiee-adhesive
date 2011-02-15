@@ -1,0 +1,42 @@
+.adhesive_icons {
+  position: relative;
+  width: 3em;
+  left: 41em;
+  top: -1.5em;
+}
+
+div.adhesive {
+  display: none;
+  position: absolute;
+  background-color: #ffc;
+  font-size: 10px;
+  border: 1px solid #eea;
+  z-index: 99;
+  box-shadow: 0.25em 0.25em 1em #666;
+  -webkit-box-shadow: 0.25em 0.25em 1em #666;
+  -moz-box-shadow: 0.25em 0.25em 1em #666;
+}
+
+div.adhesive .adhesive_head {
+  height: 10px;
+  width: 100%;
+  padding:0;
+  background-color: #ffa;
+  border-bottom: 1px solid #eea;
+}
+
+div.adhesive textarea {
+  width: 99%;
+  background-color: #ffc;
+  border: none;
+  border-radius: 0;
+  margin: 0 2px 0 2px;
+  padding: 0;
+  overflow: hidden;
+  resize: none;
+  outline: none;
+}
+
+div.adhesive .adhesive_info {
+  float: right;
+}

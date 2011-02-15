@@ -1,0 +1,57 @@
+{% load i18n %}
+<div class="adhesive_icons">
+  <a href="#" id="adhesive_toggle" {% if not notes %}class="hidden"{% endif %}>
+    <img src="{{ MEDIA_URL }}img/famfamfam/note.png" alt="{% trans "note icon" %}" title="{% trans "Show/hide notes" %}" />
+  </a>
+  <a href="#" id="adhesive_add">
+    <img src="{{ MEDIA_URL }}img/famfamfam/note_add.png" alt="{% trans "note icon with plus" %}" title="{% trans "Add new note" %}" />
+  </a>
+</div>
+
+<div id="adhesive_delete_dialog" class="hidden" title="{% trans "Confirm note deletion" %}">
+  <p><span class="ui-icon ui-icon-alert"></span> {% trans "Do you really want to delete this note?" %}</p>
+</div>
+
+<div id="adhesive_info_dialog" class="hidden" title="{% trans "Note details" %}">
+  <p></p>
+</div>
+
+<div class="adhesive adhesive_template hidden" id="adhesive_#">
+  <form method="POST" action=".">
+    <div class="adhesive_head">
+      <span class="ui-icon ui-icon-close adhesive_close" title="{% trans "Close and delete note" %}"></span>
+      <span class="ui-icon ui-icon-document-b adhesive_info" title="{% trans "Note is not yet saved" %}"></span> 
+    </div>
+    
+    <label for="adhesive_note" class="hidden">{% trans "Note" %}</label> 
+    <textarea name="adhesive_note" id="id_adhesive_#_note"></textarea>
+
+    <input type="hidden" name="id" value="new" />
+    <input type="hidden" name="is_changed" value="1" />
+    <input type="hidden" name="placement" value="800,100,100,60" />
+    <input type="hidden" name="object_id" value="{{ item.id }}" />
+    <input type="hidden" name="content_type" value="{{ item_type.id }}" />
+  </form>
+</div>                  
+
+<div id="adhesive_start"></div>
+
+{% for n in notes %}
+<div class="adhesive" id="adhesive_{{ n.id }}">
+  <form method="POST" action="." name="adhesive_{{ n.id }}">
+    <div class="adhesive_head">
+      <span class="ui-icon ui-icon-close adhesive_close"></span>
+      <span class="ui-icon ui-icon-document-b adhesive_info" title="{{ n.info_text }}"></span> 
+    </div>
+    
+    <label for="adhesive_note" class="hidden">{% trans "Note" %}</label> 
+    <textarea name="adhesive_note" id="id_adhesive_{{ n.id }}_note">{{ n.note }}</textarea>
+
+    <input type="hidden" name="id" value="{{ n.id }}" />
+    <input type="hidden" name="is_changed" value="0" />
+    <input type="hidden" name="placement" value="{{ n.placement }}" />
+    <input type="hidden" name="object_id" value="{{ item.id }}" />
+    <input type="hidden" name="content_type" value="{{ item_type.id }}" />
+  </form>
+</div>                  
+{% endfor %}

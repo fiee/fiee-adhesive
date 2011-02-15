@@ -1,0 +1,3 @@
+{% load i18n %}{% blocktrans with note.id as id and note.content_type as type and note.object_id as oid %}Note #{{ id }} on {{ type }} #{{ oid }},{% endblocktrans %}
+{% blocktrans with note.createdby as createdby and note.createdon|date:"SHORT_DATETIME_FORMAT" as createdon %}created by {{ createdby }} on {{ createdon }},{% endblocktrans %}
+{% blocktrans with note.lastchangedby as lastchangedby and note.lastchangedon|date:"SHORT_DATETIME_FORMAT" as lastchangedon %}last change by {{ lastchangedby }} on {{ lastchangedon }}{% endblocktrans %}
