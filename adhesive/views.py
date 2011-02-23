@@ -7,7 +7,7 @@ from models import Note
 
 def check_request(request):
     data = {'info': '', 'error': None}
-    if request.user.id == -1:
+    if request.user.is_anonymous():
         data['error'] = 'not authorized'
         return JSONResponse(data, status=401)
     if request.method != 'POST':
@@ -32,10 +32,11 @@ def json_get(request, id):
     """
     data = {'info': ''}
     try:
-        note = Note.objects.get(id=id)
-        data['info'] = note.info_text()
-        data['note'] = note.note
-        data['placement'] = note.placement
+        if request.user.has_perm('adhesive.view_note'):
+            note = Note.objects.get(id=id)
+            data['info'] = note.info_text()
+            data['note'] = note.note
+            data['placement'] = note.placement
     except Exception, e:
         return JSONResponse(e, status=404)
     return JSONResponse(data)
@@ -47,9 +48,13 @@ def json_save(request, id):
     data = check_request(request)
     try:
         note = Note.objects.get(id=id)
+        if not request.user.has_perm('adhesive.change_note'):
+            return JSONResponse(data, status=401)
         form = ModelFormFactory(Note, request.POST, user=request.user, instance=note)
         data['is_new'] = False
     except (ValueError, ObjectDoesNotExist):
+        if not request.user.has_perm('adhesive.add_note'):
+            return JSONResponse(data, status=401)
         form = ModelFormFactory(Note, request.POST, user=request.user) 
         form.id = None
         data['is_new'] = True
@@ -69,10 +74,10 @@ def delete(request, id):
     """
     data = check_request(request)
     try:
-        note = Note.objects.get(id=id)
-        if request.user.is_superuser or request.user == note.createdby:
-            # TODO: Permissions
-            note.delete()
+        if request.user.has_perm('adhesive.delete_note'):
+            Note.objects.get(id=id).delete()
+        else:
+            return JSONResponse(data, status=401)
     except Exception, e:
         return JSONResponse(e, status=404)
     return JSONResponse(data)
