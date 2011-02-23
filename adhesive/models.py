@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from django.contrib.contenttypes import generic
 from django.contrib.contenttypes.models import ContentType
+from django.db.models.signals import post_delete
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext_lazy as _
 from dorsale.models import DorsaleBaseModel
@@ -21,6 +22,9 @@ class Note(DorsaleBaseModel):
     class Meta:
         verbose_name = _('note')
         verbose_name_plural = _('notes')
+        permissions = (
+            ('view_note', _(u'View note')),
+        )
 
     def __unicode__(self):
         return self.note
@@ -36,3 +40,10 @@ class DorsaleAnnotatedBaseModel(DorsaleBaseModel):
     class Meta:
         abstract = True
 
+def delete_related_Notes(sender, **kwargs):
+    """
+    If an objects gets deleted, delete also all Notes on it
+    """
+    Note.objects.filter(content_object=sender).delete()
+
+post_delete.connect(delete_related_Notes)
