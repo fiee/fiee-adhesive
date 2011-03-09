@@ -23,7 +23,7 @@ class Note(DorsaleBaseModel):
         verbose_name = _('note')
         verbose_name_plural = _('notes')
         permissions = (
-            ('view_note', _(u'View note')),
+            ('view_note', _(u'Can view note')),
         )
 
     def __unicode__(self):
