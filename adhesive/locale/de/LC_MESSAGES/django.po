@@ -1,0 +1,1085 @@
+# fiëé adhésive
+# Copyright (C) 2011 fiëé visuëlle
+# This file is distributed under the same license as the adhesive package.
+# Henning Hraban Ramm <hraban@fiee.net>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fiee adhesive\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-09 20:03+0100\n"
+"PO-Revision-Date: 2011-03-09 20:04+0100\n"
+"Last-Translator: Henning Hraban Ramm <hraban@fiee.net>\n"
+"Language-Team: fiëé visuëlle <hraban@fiee.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: Germany\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: __init__.py:5
+msgid "Sticky Note"
+msgstr "Klebenotiz"
+
+#: __init__.py:6
+msgid "Sticky Notes"
+msgstr "Klebenotizen"
+
+#: models.py:15
+#: templates/sticky/notes.html:26
+#: templates/sticky/notes.html.py:47
+msgid "Note"
+msgstr "Notiz"
+
+#: models.py:16
+msgid "Placement"
+msgstr "Platzierung"
+
+#: models.py:16
+msgid "x,y,width,height [px]"
+msgstr "x, y, Breite, Höhe [px]"
+
+#: models.py:18
+msgid "content type"
+msgstr "Inhaltstyp"
+
+#: models.py:19
+msgid "object id"
+msgstr "Objekt-ID"
+
+#: models.py:23
+msgid "note"
+msgstr "Notiz"
+
+#: models.py:24
+msgid "notes"
+msgstr "Notizen"
+
+#: models.py:26
+msgid "Can view note"
+msgstr "Darf Notiz sehen"
+
+#: settings.py:13
+msgid "German"
+msgstr "Deutsch"
+
+#: settings.py:14
+msgid "English"
+msgstr "Englisch"
+
+#: templates/sticky/notes.html:4
+msgid "note icon"
+msgstr "Klebenotiz-Icon"
+
+#: templates/sticky/notes.html:4
+msgid "Show/hide notes"
+msgstr "Notizen anzeigen/verbergen"
+
+#: templates/sticky/notes.html:7
+msgid "note icon with plus"
+msgstr "Klebenotiz-Icon mit Plus"
+
+#: templates/sticky/notes.html:7
+msgid "Add new note"
+msgstr "Neue Notiz anlegen"
+
+#: templates/sticky/notes.html:11
+msgid "Confirm note deletion"
+msgstr "Löschen der Notiz bestätigen"
+
+#: templates/sticky/notes.html:12
+msgid "Do you really want to delete this note?"
+msgstr "Möchten Sie diese Notiz wirklich löschen?"
+
+#: templates/sticky/notes.html:15
+msgid "Note details"
+msgstr "Notiz-Einzelheiten"
+
+#: templates/sticky/notes.html:22
+msgid "Close and delete note"
+msgstr "Notiz schließen und löschen"
+
+#: templates/sticky/notes.html:23
+msgid "Note is not yet saved"
+msgstr "Die Notiz ist noch nicht gespeichert"
+
+#~ msgid "Note #%(id)s on %(type)s #%(oid)s,"
+#~ msgstr "Notiz Nr.%(id)s zu %(type)s Nr.%(oid)s,"
+
+#~ msgid "created by %(createdby)s on %(createdon)s,"
+#~ msgstr "angelegt von %(createdby)s am %(createdon)s,"
+
+#~ msgid "last change by %(lastchangedby)s on %(lastchangedon)s"
+#~ msgstr "zuletzt geändert von %(lastchangedby)s am %(lastchangedon)s"
+
+#~ msgid "fiëé cérébrale"
+#~ msgstr "fiëé cérébrale"
+
+#~ msgid "STRING_NOT_SET"
+#~ msgstr "ZEICHENKETTE_NICHT_DEFINIERT"
+
+#~ msgid ""
+#~ "Please create a %s file with random characters to generate your secret "
+#~ "key!"
+#~ msgstr ""
+#~ "Bitte erzeugen Sie eine Datei %s mit zufälligen Zeichen, um Ihren "
+#~ "geheimen Schlüssel zu erzeugen!"
+
+#~ msgid ""
+#~ "This is an invalid color code. It must be a html hex color code e.g. "
+#~ "#000000"
+#~ msgstr ""
+#~ "Dieser Farbcode ist ungültig. Zulässig sind nur hexadezimale HTML-"
+#~ "Farbcodes, z.B. #000000"
+
+#~ msgid ""
+#~ "This is not a valid CMYK color code. Please use percent values e.g. "
+#~ "0,100,100,0"
+#~ msgstr ""
+#~ "Dieser Farbcode ist ungültig. Bitte geben Sie CMYK-Prozentwerte ein, z.B. "
+#~ "0,100,100,0"
+
+#~ msgid "This is not a valid year (between 1900 and 2100)."
+#~ msgstr "Das ist kein gültiges Jahr (zwischen 1900 und 2100)."
+
+#~ msgid "This is not a valid page range (divisible by 4)."
+#~ msgstr "Das ist kein gültiger Seitenumfang (teilbar durch 4)."
+
+#~ msgid "Edit %s"
+#~ msgstr "%s bearbeiten"
+
+#~ msgid "%(model_name)s %(model_id)s saved."
+#~ msgstr "%(model_name)s %(model_id)s wurde gespeichert."
+
+#~ msgid "Delete %s"
+#~ msgstr "Lösche %s"
+
+#~ msgid "%(model_name)s %(model_id)s deleted."
+#~ msgstr "%(model_name)s %(model_id)s wurde gelöscht."
+
+#~ msgid "New %s"
+#~ msgstr "%s erzeugen"
+
+#~ msgid "This %s already exists!"
+#~ msgstr "%s existiert bereits!"
+
+#~ msgid "New %s saved."
+#~ msgstr "%s gespeichert."
+
+#~ msgid "created by"
+#~ msgstr "Angelegt von"
+
+#~ msgid "the user that was logged in when this item was created"
+#~ msgstr "Der Benutzer, der beim Anlegen dieses Eintrags angemeldet war"
+
+#~ msgid "created on"
+#~ msgstr "Angelegt am"
+
+#~ msgid "date and time when this item was created"
+#~ msgstr "Datum und Uhrzeit, wann dieser Eintrag angelegt wurde"
+
+#~ msgid "last changed by"
+#~ msgstr "zuletzt geändert von"
+
+#~ msgid "the user that was logged in when this item was changed the last time"
+#~ msgstr ""
+#~ "Der Benutzer, der bei der letzten Änderung dieses Eintrags angemeldet war"
+
+#~ msgid "deleted?"
+#~ msgstr "gelöscht?"
+
+#~ msgid "Is this item marked as deleted?"
+#~ msgstr "Ist dieser Eintrag als gelöscht markiert?"
+
+#~ msgid "last changed on"
+#~ msgstr "zuletzt geändert am"
+
+#~ msgid "date and time when this item was changed the last time"
+#~ msgstr "Datum und Uhrzeit der letzten Änderung dieses Eintrags"
+
+#~ msgid "tenant’s site"
+#~ msgstr "Kunden-Site"
+
+#~ msgid "site of the related customer/project/team"
+#~ msgstr "Site des betreffenden Kunden/Projektes/Teams"
+
+#~ msgid ""
+#~ "You do not yet belong to any groups. Ask your administrator to add you to "
+#~ "one."
+#~ msgstr ""
+#~ "Sie gehören noch zu keiner Arbeitsgruppe. Bitten Sie Ihren Administrator, "
+#~ "Sie zu einer hinzuzufügen."
+
+#~ msgid "User %s doesn't belong to any group!"
+#~ msgstr "Benutzer %s gehört zu keiner Gruppe!"
+
+#~ msgid "Standard template"
+#~ msgstr "Musterseite"
+
+#~ msgid "Main content area"
+#~ msgstr "Hauptinhalt"
+
+#~ msgid "Right column"
+#~ msgstr "Rechte Spalte"
+
+#~ msgid "ReStructured Text"
+#~ msgstr "ReStructured Text"
+
+#~ msgid "ReStructured Texts"
+#~ msgstr "ReStructured Texts"
+
+#~ msgid "block"
+#~ msgstr "Block"
+
+#~ msgid "left"
+#~ msgstr "Links"
+
+#~ msgid "right"
+#~ msgstr "Rechts"
+
+#~ msgid "Error 404: Page Not Found"
+#~ msgstr "Fehler 404: Seite nicht gefunden"
+
+#~ msgid "Error 500: Server Error"
+#~ msgstr "Fehler 500: Server-Fehler"
+
+#~ msgid ""
+#~ "Sorry, this page is temporalily unavailable due to a server "
+#~ "misconfiguration."
+#~ msgstr ""
+#~ "Entschuldigung, diese Seite ist wegen eines Serverproblems vorübergehend "
+#~ "nicht erreichbar."
+
+#~ msgid "Back"
+#~ msgstr "Zurück"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "Save"
+#~ msgstr "Sichern"
+
+#~ msgid "You must not edit this item!"
+#~ msgstr "Sie dürfen diesen Eintrag nicht bearbeiten!"
+
+#~ msgid "About..."
+#~ msgstr "Über..."
+
+#~ msgid "Home"
+#~ msgstr "Startseite"
+
+#~ msgid "Logout"
+#~ msgstr "Abmelden"
+
+#~ msgid "Password change"
+#~ msgstr "Passwort ändern"
+
+#~ msgid "Preferences"
+#~ msgstr "Einstellungen"
+
+#~ msgid "Administration"
+#~ msgstr "Verwaltung"
+
+#~ msgid "Login"
+#~ msgstr "Anmeldung"
+
+#~ msgid "Welcome!"
+#~ msgstr "Willkommen!"
+
+#~ msgid "Sorry, you’re not cleared for the <em>%(app_name)s</em> module!\" "
+#~ msgstr ""
+#~ "Entschuldigung, das Modul <em>%(app_name)s</em> ist nicht für Sie "
+#~ "freigeschaltet!"
+
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgid "Sorry, that's not a valid username or password"
+#~ msgstr "Benutzername oder Kennwort sind falsch."
+
+#~ msgid "Please logon using your username and password"
+#~ msgstr "Bitte melden Sie sich mit Ihrem Benutzernamen und Kennwort an."
+
+#~ msgid "User name:"
+#~ msgstr "Benutzername:"
+
+#~ msgid "Password:"
+#~ msgstr "Kennwort:"
+
+#~ msgid "You have logged off."
+#~ msgstr "Sie sind nun abgemeldet."
+
+#~ msgid "Password change successful"
+#~ msgstr "Passwort erfolgreich geändert"
+
+#~ msgid "Your password was changed."
+#~ msgstr "Ihr Passwort wurde geändert."
+
+#~ msgid "Documentation"
+#~ msgstr "Dokumentation"
+
+#~ msgid "Change password"
+#~ msgstr "Passwort ändern"
+
+#~ msgid "Log out"
+#~ msgstr "Abmelden"
+
+#~ msgid ""
+#~ "Please enter your old password, for security's sake, and then enter your "
+#~ "new password twice so we can verify you typed it in correctly."
+#~ msgstr ""
+#~ "Bitte geben Sie aus Sicherheitsgründen erst Ihr altes Passwort und "
+#~ "darunter dann zweimal (um sicherzustellen, dass Sie es korrekt eingegeben "
+#~ "haben) das neue Kennwort ein."
+
+#~ msgid "Old password"
+#~ msgstr "Altes Passwort"
+
+#~ msgid "New password"
+#~ msgstr "Neues Passwort"
+
+#~ msgid "Password (again)"
+#~ msgstr "Passwort (wiederholen)"
+
+#~ msgid "Change my password"
+#~ msgstr "Mein Passwort ändern"
+
+#~ msgid "Tasks"
+#~ msgstr "Aufgaben"
+
+#~ msgid "Lists"
+#~ msgstr "Listen"
+
+#~ msgid "My tasks"
+#~ msgstr "Meine Aufgaben"
+
+#~ msgid "Deleted tasks"
+#~ msgstr "Gelöschte Aufgaben "
+
+#~ msgid "Help"
+#~ msgstr "Hilfe"
+
+#~ msgid "List"
+#~ msgstr "Liste"
+
+#~ msgid "Vouchers"
+#~ msgstr "Belege"
+
+#~ msgid "Upload advertising list (AdWare)"
+#~ msgstr "Anzeigenliste (AdWare) hochladen"
+
+#~ msgid "Upload editorial list (AdWare)"
+#~ msgstr "Redaktionelle Liste (AdWare) hochladen"
+
+#~ msgid "Upload editorial list (Excel)"
+#~ msgstr "Redaktionelle Liste (Excel) hochladen"
+
+#~ msgid "Download PDFs"
+#~ msgstr "PDFs herunterladen"
+
+#~ msgid "Issues"
+#~ msgstr "Ausgaben"
+
+#~ msgid "Upload cover"
+#~ msgstr "Titelbild hochladen"
+
+#~ msgid "Shipping information"
+#~ msgstr "Versand-Informationen"
+
+#~ msgid "Layouts"
+#~ msgstr "Layouts"
+
+#~ msgid "Products"
+#~ msgstr "Produkte"
+
+#~ msgid "New Issue"
+#~ msgstr "Neue Ausgabe"
+
+#~ msgid "Users"
+#~ msgstr "Benutzer"
+
+#~ msgid "Customers"
+#~ msgstr "Kunden"
+
+#~ msgid "Orders"
+#~ msgstr "Aufträge"
+
+#~ msgid "Introduction"
+#~ msgstr "Einführung"
+
+#~ msgid "Cover"
+#~ msgstr "Titelbild"
+
+#~ msgid "Calendar"
+#~ msgstr "Kalender"
+
+#~ msgid "This Year"
+#~ msgstr "Dieses Jahr"
+
+#~ msgid "This Month"
+#~ msgstr "Diesen Monat"
+
+#~ msgid "Today"
+#~ msgstr "Heute"
+
+#~ msgid "Events"
+#~ msgstr "Termine"
+
+#~ msgid "New Event"
+#~ msgstr "Neues Ereignis"
+
+#~ msgid "Modules"
+#~ msgstr "Module"
+
+#~ msgid "Change language"
+#~ msgstr "Sprache ändern"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Cancel"
+#~ msgstr "Abbrechen"
+
+#~ msgid "Notes"
+#~ msgstr "Anmerkungen"
+
+#~ msgid "First"
+#~ msgstr "Anfang"
+
+#~ msgid "Previous"
+#~ msgstr "Zurück"
+
+#~ msgid "Next"
+#~ msgstr "Weiter"
+
+#~ msgid "Last"
+#~ msgstr "Ende"
+
+#~ msgid "New Item"
+#~ msgstr "Neuer Eintrag"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Todo"
+#~ msgstr "Aufgabenliste"
+
+#~ msgid "To-do lists"
+#~ msgstr "Aufgabenlisten"
+
+#~ msgid "Error"
+#~ msgstr "Fehler"
+
+#~ msgid "Log in again."
+#~ msgstr "Erneut anmelden"
+
+#~ msgid "Edition"
+#~ msgstr "Verlag"
+
+#~ msgid "Voucher Texts"
+#~ msgstr "Beleg-Texte"
+
+#~ msgid "Upload list files"
+#~ msgstr "Listen-Dateien hochladen"
+
+#~ msgid "Printable PDFs"
+#~ msgstr "Druckbare PDFs"
+
+#~ msgid "<i>fiëé cérébrale</i> is your modular editorial system."
+#~ msgstr "<i>fiëé cérébrale</i> ist Ihr modulares Redaktionssystem."
+
+#~ msgid ""
+#~ "\n"
+#~ "\t                <p>Modules (status quo of development):</p>\n"
+#~ "\t                <dl>\n"
+#~ "\t                  <dt>To-do Lists</dt>\n"
+#~ "\t                   <dd>active (August 2010)</dd>\n"
+#~ "                    <dt>Vouchers</dt>\n"
+#~ "                     <dd>in development (September 2010)</dd>\n"
+#~ "                    <dt>Classifieds</dt>\n"
+#~ "                     <dd>in development (December 2010 / January 2011)</"
+#~ "dd>\n"
+#~ "                    <dt>Crossword Puzzles</dt>\n"
+#~ "                     <dd>in development (see <i><a href=\"http://croisee."
+#~ "fiee.net\">fiëé croisée</a></i>)</dd>\n"
+#~ "                    <dt>Events</dt>\n"
+#~ "                     <dd>in planning (an old version is active)</dd>\n"
+#~ "                    <dt>Articles</dt>\n"
+#~ "                     <dd>in planning (an old version is active)</dd>\n"
+#~ "                    <dt>Web-CMS</dt>\n"
+#~ "                     <dd>ready (pluggable)</dd>\n"
+#~ "\t                </dl>\n"
+#~ "\t                "
+#~ msgstr ""
+#~ "\n"
+#~ "\t                <p>Module nach aktuellem Stand der Planung:</p>\n"
+#~ "\t                <dl>\n"
+#~ "\t                <dt>To-do-Listen</dt>\n"
+#~ "\t                <dd>aktiv (August 2010)</dd>\n"
+#~ "\t                <dt>Belegversand</dt>\n"
+#~ "\t                <dd>in Entwicklung (September 2010)</dd>\n"
+#~ "\t                <dt>Kleinanzeigen</dt>\n"
+#~ "\t                <dd>in Entwicklung (Dezember 2010 / Januar 2011)</dd>\n"
+#~ "\t                <dt>Kreuzworträtsel</dt>\n"
+#~ "\t                <dd>in Entwicklung (siehe <i><a href=\"http://croisee."
+#~ "fiee.net\">fiëé croisée</a></i>)</dd>\n"
+#~ "\t                <dt>Veranstaltungs-Termine</dt>\n"
+#~ "\t                <dd>in Planung (alte Version in Produktion)</dd>\n"
+#~ "\t                <dt>Redaktionelle Artikel</dt> \n"
+#~ "\t                <dd>in Planung (alte Version in Produktion)</dd>\n"
+#~ "\t                <dt>Web-CMS</dt>\n"
+#~ "\t                <dd>verfügbar</dd>\n"
+#~ "\t                </dl>\n"
+#~ "\t                "
+
+#~ msgid "Site Admin"
+#~ msgstr "Website-Verwaltung"
+
+#~ msgid "Add"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "History"
+#~ msgstr "Historie"
+
+#~ msgid "Please correct the error below."
+
+#~ msgid_plural "Please correct the errors below."
+#~ msgstr[0] "Bitte den aufgeführten Fehler korrigieren."
+#~ msgstr[1] "Bitte die aufgeführten Fehler korrigieren."
+
+#~ msgid "Add %(name)s"
+#~ msgstr "%(name)s hinzufügen"
+
+#~ msgid "Filter"
+#~ msgstr "Filter"
+
+#~ msgid "Models available in the %(name)s application."
+#~ msgstr "Modelle, die in der Anwendung %(name)s vorhanden sind."
+
+#~ msgid "Change"
+#~ msgstr "Ändern"
+
+#~ msgid "You don't have permission to edit anything."
+#~ msgstr "Sie haben keine Berechtigung, irgendetwas zu ändern."
+
+#~ msgid "Recent Actions"
+#~ msgstr "Kürzliche Aktionen"
+
+#~ msgid "My Actions"
+#~ msgstr "Meine Aktionen"
+
+#~ msgid "None available"
+#~ msgstr "Keine vorhanden"
+
+#~ msgid "Unknown content"
+#~ msgstr "Unbekannter Inhalt"
+
+#~ msgid "project_name"
+#~ msgstr "fiëé cérébrale"
+
+#~ msgid "project_names"
+#~ msgstr "fiëé cérébrale"
+
+#~ msgid "to-do items"
+#~ msgstr "Aufgaben"
+
+#~ msgid " %(list.name)s is gone."
+#~ msgstr " %(list.name)s wurde entfernt."
+
+#~ msgid "Return to lists"
+#~ msgstr "Zurück zu den Listen"
+
+#~ msgid "Delete entire list"
+#~ msgstr "Ganze Liste löschen"
+
+#~ msgid "Category tally"
+#~ msgstr "Kategorie-Bilanz"
+
+#~ msgid "Incomplete"
+#~ msgstr "Unvollendet"
+
+#~ msgid "Complete"
+#~ msgstr "Abgeschlossen"
+
+#~ msgid "Total"
+#~ msgstr "Gesamt"
+
+#~ msgid ""
+#~ "... all of which will be irretrievably <strong>blown away</strong>. Are "
+#~ "you sure you want to do that?"
+#~ msgstr ""
+#~ "... die alle unwiderruflich <strong>vernichtet</strong> werden. Sind Sie "
+#~ "sicher, dass Sie das tun möchten?"
+
+#~ msgid "Do it!"
+#~ msgstr "Ausführen"
+
+#~ msgid "Return to list"
+#~ msgstr "Zurück zur Liste"
+
+#~ msgid ""
+#~ "Sorry, you don't have permission to delete lists. Please contact your "
+#~ "group administrator."
+#~ msgstr ""
+#~ "Sie haben nicht das Recht, Listen zu löschen. Bitte wenden Sie sich an "
+#~ "Ihren Administrator."
+
+#~ msgid "%(item_count)s items in %(list_count)s lists"
+#~ msgstr "%(item_count)s Einträge in %(list_count)s Listen"
+
+#~ msgid "Add a list:"
+#~ msgstr "Liste hinzufügen:"
+
+#~ msgid "Submit"
+#~ msgstr "Abschicken"
+
+#~ msgid "Tasks assigned to"
+#~ msgstr "Aufgaben zugewiesen an"
+
+#~ msgid "Tasks filed under"
+#~ msgstr "Aufgaben gespeichert unter"
+
+#~ msgid "Click to add task"
+#~ msgstr "Aufgabe hinzufügen"
+
+#~ msgid "Notify"
+#~ msgstr "Benachrichtigen"
+
+#~ msgid ""
+#~ "Email notifications will only be sent if task is assigned to someone "
+#~ "besides yourself."
+#~ msgstr ""
+#~ "E-Mail-Benachrichtigungen werden nur versandt, wenn die Aufgabe jemand "
+#~ "anderem als Ihnen zugewiesen wird."
+
+#~ msgid "Add task"
+#~ msgstr "Aufgabe hinzufügen"
+
+#~ msgid "Incomplete tasks"
+#~ msgstr "Unvollendete Aufgaben"
+
+#~ msgid "Drag rows to set priorities"
+#~ msgstr "Verschieben Sie die Zeilen, um Prioritäten zu setzen."
+
+#~ msgid "Done"
+#~ msgstr "Fertig"
+
+#~ msgid "Due on"
+#~ msgstr "Fällig am"
+
+#~ msgid "Owner"
+#~ msgstr "Besitzer"
+
+#~ msgid "Assigned"
+#~ msgstr "Zugewiesen"
+
+#~ msgid "Comm"
+#~ msgstr "Anm."
+
+#~ msgid "Del"
+#~ msgstr "Löschen"
+
+#~ msgid "View completed tasks"
+#~ msgstr "Abgeschlossene Aufgaben ansehen"
+
+#~ msgid "Undo"
+#~ msgstr "Rückgängig"
+
+#~ msgid "Completed on"
+#~ msgstr "Abgeschlossen am"
+
+#~ msgid "View incomplete tasks"
+#~ msgstr "Unvollendete Aufgaben ansehen"
+
+#~ msgid "Delete this list"
+#~ msgstr "Liste löschen"
+
+#~ msgid "Click to edit details"
+#~ msgstr "Details bearbeiten"
+
+#~ msgid "In list"
+#~ msgstr "in Liste"
+
+#~ msgid "Assigned to"
+#~ msgstr "Zugewiesen an"
+
+#~ msgid "Due date"
+#~ msgstr "Fällig am"
+
+#~ msgid "Completed"
+#~ msgstr "Abgeschlossen"
+
+#, fuzzy
+#~ msgid "Comment:"
+#~ msgstr "Anm."
+
+#~ msgid "Comments on this task"
+#~ msgstr "Kommentare zu dieser Aufgabe"
+
+#~ msgid "Assign to"
+#~ msgstr "Zuweisen"
+
+#~ msgid "Continue..."
+#~ msgstr "Weiter..."
+
+#~ msgid "Due"
+#~ msgstr "Fällig"
+
+#~ msgid "Priority"
+#~ msgstr "Priorität"
+
+#~ msgid "logout"
+#~ msgstr "Abmelden"
+
+#~ msgid "login"
+#~ msgstr "Anmelden"
+
+#~ msgid "search"
+#~ msgstr "Suchen"
+
+#~ msgid "Imprint"
+#~ msgstr "Impressum"
+
+#~ msgid "Person template"
+#~ msgstr "Personen-Seite"
+
+#~ msgid "Calendars"
+#~ msgstr "Kalender"
+
+#~ msgid "center"
+#~ msgstr "Mitte"
+
+#~ msgid "TIME_FORMAT"
+#~ msgstr "G:i"
+
+#~ msgid "Cannot remove this frame while inside this admin section."
+#~ msgstr "Dieser Rahmen kann in diesem Admin-Bereich nicht entfernt werden."
+
+#~ msgid "remove"
+#~ msgstr "entfernen"
+
+#~ msgid "Reload"
+#~ msgstr "Neu laden"
+
+#~ msgid "Expand all"
+#~ msgstr "Alles ausklappen"
+
+#~ msgid "Collapse all"
+#~ msgstr "Alles einklappen"
+
+#~ msgid "Insert after"
+#~ msgstr "danach einfügen"
+
+#~ msgid "Insert before"
+#~ msgstr "davor einfügen"
+
+#~ msgid "Insert as child"
+#~ msgstr "untergeordnet einfügen"
+
+#~ msgid "Foto:"
+#~ msgstr "Foto: "
+
+#~ msgid "Starts"
+#~ msgstr "Beginn"
+
+#~ msgid "DATETIME_FORMAT"
+#~ msgstr "d.m.Y G:i"
+
+#~ msgid "Ends"
+#~ msgstr "Ende"
+
+#~ msgid "Reoccurs"
+#~ msgstr "Wiederholung"
+
+#~ msgid "until"
+#~ msgstr "bis"
+
+#~ msgid "Description"
+#~ msgstr "Beschreibung"
+
+#~ msgid "%(start_date)s"
+#~ msgstr "%(start_date)s"
+
+#~ msgid "%(end_date)s"
+#~ msgstr "%(end_date)s"
+
+#~ msgid "Question"
+#~ msgstr "Frage"
+
+#~ msgid ""
+#~ "Do you want to cancel this occurrence or delete all occurrences of this "
+#~ "event?"
+#~ msgstr ""
+#~ "Möchten Sie nur diese eine Wiederholung des Termins löschen oder alle?"
+
+#~ msgid "This is a recurring event"
+#~ msgstr "Dies ist ein wiederkehrender Termin"
+
+#~ msgid "Do you want to edit this occurrence or all occurrences?"
+#~ msgstr ""
+#~ "Möchten Sie nur diese eine Wiederholung des Termins bearbeiten oder alle?"
+
+#~ msgid "Edit Event"
+#~ msgstr "Termin bearbeiten"
+
+#~ msgid "YEAR_MONTH_FORMAT"
+#~ msgstr "F Y"
+
+#~ msgid "Week"
+#~ msgstr "Woche"
+
+#~ msgid "Month"
+#~ msgstr "Monat"
+
+#~ msgid "Year"
+#~ msgstr "Jahr"
+
+#~ msgid "Available Calendars"
+#~ msgstr "Verfügbare Kalender"
+
+#~ msgid "Small Month"
+#~ msgstr "Kleiner Monat"
+
+#~ msgid "1 Month"
+#~ msgstr "Monat"
+
+#~ msgid "3 Months"
+#~ msgstr "3 Monate"
+
+#~ msgid "Weekly"
+#~ msgstr "Wöchentlich"
+
+#~ msgid "Daily"
+#~ msgstr "Täglich"
+
+#~ msgid "Feed"
+#~ msgstr "Liste"
+
+#~ msgid "Three Months"
+#~ msgstr "3 Monate"
+
+#~ msgid "This week"
+#~ msgstr "Diese Woche"
+
+#~ msgid "Current Month"
+#~ msgstr "Dieser Monat"
+
+#~ msgid "Current Year"
+#~ msgstr "Dieses Jahr"
+
+#~ msgid "Are you sure that you really want to cancel this occurrence?"
+#~ msgstr "Sind Sie sicher, dass Sie diese Wiederholung absagen möchten?"
+
+#~ msgid "From"
+#~ msgstr "Von"
+
+#~ msgid "to"
+#~ msgstr "bis"
+
+#~ msgid "%(end_recurring_date)s"
+#~ msgstr "%(end_recurring_date)s"
+
+#~ msgid "Never. This is a 'one time only' event."
+#~ msgstr "Nie. Dies ist ein einmaliger Termin."
+
+#~ msgid "Day"
+#~ msgstr "Tag"
+
+#~ msgid "Three Month Calendar"
+#~ msgstr "Drei-Monats-Kalender"
+
+#~ msgid "Full Year Calendar"
+#~ msgstr "Ganzjahres-Kalender"
+
+#~ msgid "Startseite"
+#~ msgstr "Startseite"
+
+#~ msgid "Impressum"
+#~ msgstr "Impressum"
+
+#~ msgid "monatlich"
+#~ msgstr "monatlich"
+
+#~ msgid "Addresses"
+#~ msgstr "Adressen"
+
+#~ msgid "key"
+#~ msgstr "Schlüssel"
+
+#~ msgid "inherited"
+#~ msgstr "Vererbt"
+
+#~ msgid ""
+#~ "Should the content be inherited by subpages if they do not define any "
+#~ "content for this region?"
+#~ msgstr ""
+#~ "Soll der Inhalt dieser Region durch Unterseiten geerbt werden, sofern "
+#~ "diese keinen eigenen Inhalt definieren?"
+
+#~ msgid "region"
+#~ msgstr "Region"
+
+#~ msgid "regions"
+#~ msgstr "Regionen"
+
+#~ msgid "ordering"
+#~ msgstr "Sortierung"
+
+#~ msgid "Database error"
+#~ msgstr "Datenbankfehler"
+
+#~ msgid "file"
+#~ msgstr "Datei"
+
+#~ msgid "files"
+#~ msgstr "Dateien"
+
+#~ msgid "image"
+#~ msgstr "Bild"
+
+#~ msgid "images"
+#~ msgstr "Bilder"
+
+#~ msgid "media file"
+#~ msgstr "Mediendatei"
+
+#~ msgid "media files"
+#~ msgstr "Mediendateien"
+
+#~ msgid "text"
+#~ msgstr "Text"
+
+#~ msgid "rich text"
+#~ msgstr "Text"
+
+#~ msgid ""
+#~ "The rss field is updated several times a day. A change in the title will "
+#~ "only be visible on the home page after the next feed update."
+#~ msgstr ""
+#~ "Der RSS Feed wird mehrmals täglich aktualisiert. Eine Änderung des Titels "
+#~ "erscheint erst nach der nächsten Feed-Aktualisierung auf der Webseite."
+
+#~ msgid "Pre-rendered content"
+#~ msgstr "Vor-gerenderter Inhalt"
+
+#~ msgid "Last updated"
+#~ msgstr "Letzte Aktualisierung"
+
+#~ msgid "Max. items"
+#~ msgstr "Maximale Anzahl"
+
+#~ msgid "RSS feed"
+#~ msgstr "RSS Feed"
+
+#~ msgid "RSS feeds"
+#~ msgstr "RSS Feeds"
+
+#~ msgid "video link"
+#~ msgstr "Video-Link"
+
+#~ msgid ""
+#~ "This should be a link to a youtube video, i.e.: http://www.youtube.com/"
+#~ "watch?v=zmj1rpzDRZ0"
+#~ msgstr ""
+#~ "Dies sollte ein Link zu einem Youtube-Video sein, z.B.: http://www."
+#~ "youtube.com/watch?v=zmj1rpzDRZ0"
+
+#~ msgid "video"
+#~ msgstr "Video"
+
+#~ msgid "videos"
+#~ msgstr "Videos"
+
+#~ msgid "Other options"
+#~ msgstr "Weitere Optionen"
+
+#~ msgid "navigation extension"
+#~ msgstr "Navigations-Erweiterung"
+
+#~ msgid "active"
+#~ msgstr "Aktiv"
+
+#~ msgid "This is used for the generated navigation too."
+#~ msgstr "Dies wird auch für die generierte Navigation verwendet."
+
+#~ msgid "in navigation"
+#~ msgstr "In der Navigation"
+
+#~ msgid "override URL"
+#~ msgstr "Überschriebene URL"
+
+#~ msgid "Override the target URL for the navigation."
+#~ msgstr "Überschreibe die Ziel-URL für die Navigation."
+
+#~ msgid "redirect to"
+#~ msgstr "Weiterleiten zu"
+
+#~ msgid "Target URL for automatic redirects."
+#~ msgstr "Ziel-URL für automatische Weiterleitungen."
+
+#~ msgid "Cached URL"
+#~ msgstr "Zwischengespeicherte URL"
+
+#~ msgid ""
+#~ "Select the module providing subpages for this page if you need to "
+#~ "customize the navigation."
+#~ msgstr "Wähle das Modul aus, welches weitere Navigationspunkte erstellt."
+
+#~ msgid "The first line is the main title, the following lines are subtitles."
+#~ msgstr "Die erste Zeile ist der Haupttitel, die weiteren Zeilen Untertitel"
+
+#~ msgid "page title"
+#~ msgstr "Seitentitel"
+
+#~ msgid "Page title for browser window. Same as title by default."
+#~ msgstr ""
+#~ "Seitentitel für das Browser-Fenster. Standardmässig gleich wie der Titel."
+
+#~ msgid "meta keywords"
+#~ msgstr "Meta Begriffe"
+
+#~ msgid "This will be prepended to the default keyword list."
+#~ msgstr "Diese Begriffe werden vor die Standard-Begriffsliste eingefügt."
+
+#~ msgid "This will be prepended to the default description."
+#~ msgstr "Diese Beschreibung wird vor der Standard-Beschreibung eingefügt."
+
+#~ msgid "page"
+#~ msgstr "Seite"
+
+#~ msgid "pages"
+#~ msgstr "Seiten"
+
+#~ msgid "Choose"
+#~ msgstr "Auswählen"
+
+#~ msgid "Region empty"
+#~ msgstr "Region leer"
+
+#~ msgid ""
+#~ "Content from the parent site is automatically inherited. To override this "
+#~ "behaviour, add some content."
+#~ msgstr ""
+#~ "Inhalt wird von der übergeordneten Seite geerbt. Füge Inhalt hinzu, um "
+#~ "dieses Verhalten zu ändern"
+
+#~ msgid "Page"
+#~ msgstr "Seite"
+
+#~ msgid "in navi"
+#~ msgstr "Im Menü"
+
+#~ msgid "categories"
+#~ msgstr "Kategorien"
+
+#~ msgid "copyright"
+#~ msgstr "Copyright"
+
+#~ msgid "media file translation"
+#~ msgstr "Mediendatei-Übersetzung"
+
+#~ msgid "media file translations"
+#~ msgstr "Mediendatei-Übersetzungen"

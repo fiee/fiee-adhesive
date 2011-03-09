@@ -1,0 +1,753 @@
+# fiëé adhésive
+# Copyright (C) 2011 fiëé visuëlle
+# This file is distributed under the same license as the adhesive package.
+# Henning Hraban Ramm <hraban@fiee.net>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fiee adhesive\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-09 20:03+0100\n"
+"PO-Revision-Date: 2011-03-09 20:04+0100\n"
+"Last-Translator: Henning Hraban Ramm <hraban@fiee.net>\n"
+"Language-Team: fiëé visuëlle <hraban@fiee.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: __init__.py:5
+msgid "Sticky Note"
+msgstr "Sticky Note"
+
+#: __init__.py:6
+msgid "Sticky Notes"
+msgstr "Sticky Notes"
+
+#: models.py:15
+#: templates/sticky/notes.html:26
+#: templates/sticky/notes.html.py:47
+msgid "Note"
+msgstr "Note"
+
+#: models.py:16
+msgid "Placement"
+msgstr "Placement"
+
+#: models.py:16
+msgid "x,y,width,height [px]"
+msgstr "x, y, width, height [px]"
+
+#: models.py:18
+msgid "content type"
+msgstr "content type"
+
+#: models.py:19
+msgid "object id"
+msgstr "object id"
+
+#: models.py:23
+msgid "note"
+msgstr "note"
+
+#: models.py:24
+msgid "notes"
+msgstr "notes"
+
+#: models.py:26
+msgid "Can view note"
+msgstr "Can view note"
+
+#: settings.py:13
+msgid "German"
+msgstr "German"
+
+#: settings.py:14
+msgid "English"
+msgstr "English"
+
+#: templates/sticky/notes.html:4
+msgid "note icon"
+msgstr "note icon"
+
+#: templates/sticky/notes.html:4
+msgid "Show/hide notes"
+msgstr "Show/hide notes"
+
+#: templates/sticky/notes.html:7
+msgid "note icon with plus"
+msgstr "Note icon with plus"
+
+#: templates/sticky/notes.html:7
+msgid "Add new note"
+msgstr "Add new note"
+
+#: templates/sticky/notes.html:11
+msgid "Confirm note deletion"
+msgstr "Confirm note deletion"
+
+#: templates/sticky/notes.html:12
+msgid "Do you really want to delete this note?"
+msgstr "Do you really want to delete this note?"
+
+#: templates/sticky/notes.html:15
+msgid "Note details"
+msgstr "Note details"
+
+#: templates/sticky/notes.html:22
+msgid "Close and delete note"
+msgstr "Close and delete note"
+
+#: templates/sticky/notes.html:23
+msgid "Note is not yet saved"
+msgstr "Note is not yet saved"
+
+#~ msgid "Note #%(id)s on %(type)s #%(oid)s,"
+#~ msgstr "Note #%(id)s on %(type)s #%(oid)s,"
+
+#~ msgid "created by %(createdby)s on %(createdon)s,"
+#~ msgstr "created by %(createdby)s on %(createdon)s,"
+
+#~ msgid "last change by %(lastchangedby)s on %(lastchangedon)s"
+#~ msgstr "last change by %(lastchangedby)s on %(lastchangedon)s"
+
+#~ msgid "fiëé cérébrale"
+#~ msgstr "fiëé cérébrale"
+
+#~ msgid "STRING_NOT_SET"
+#~ msgstr "String not set"
+
+#~ msgid ""
+#~ "Please create a %s file with random characters to generate your secret "
+#~ "key!"
+#~ msgstr ""
+#~ "Please create a %s file with random characters to generate your secret "
+#~ "key!"
+
+#~ msgid ""
+#~ "This is an invalid color code. It must be a html hex color code e.g. "
+#~ "#000000"
+#~ msgstr ""
+#~ "This is an invalid color code. It must be a html hex color code e.g. "
+#~ "#000000"
+
+#~ msgid ""
+#~ "This is not a valid CMYK color code. Please use percent values e.g. "
+#~ "0,100,100,0"
+#~ msgstr ""
+#~ "This is not a valid CMYK color code. Please use percent values e.g. "
+#~ "0,100,100,0"
+
+#~ msgid "This is not a valid year (between 1900 and 2100)."
+#~ msgstr "This is not a valid year (between 1900 and 2100)."
+
+#~ msgid "This is not a valid page range (divisible by 4)."
+#~ msgstr "This is not a valid page range (divisible by 4)."
+
+#~ msgid "Edit %s"
+#~ msgstr "Edit %s"
+
+#~ msgid "%(model_name)s %(model_id)s saved."
+#~ msgstr "%(model_name)s %(model_id)s saved."
+
+#~ msgid "Delete %s"
+#~ msgstr "Delete %s"
+
+#~ msgid "%(model_name)s %(model_id)s deleted."
+#~ msgstr "%(model_name)s %(model_id)s deleted."
+
+#~ msgid "New %s"
+#~ msgstr "New %s"
+
+#~ msgid "This %s already exists!"
+#~ msgstr "This %s already exists!"
+
+#~ msgid "New %s saved."
+#~ msgstr "New %s saved."
+
+#~ msgid "created by"
+#~ msgstr "created by"
+
+#~ msgid "the user that was logged in when this item was created"
+#~ msgstr "the user that was logged in when this item was created"
+
+#~ msgid "created on"
+#~ msgstr "created on"
+
+#~ msgid "date and time when this item was created"
+#~ msgstr "date and time when this item was created"
+
+#~ msgid "last changed by"
+#~ msgstr "last changed by"
+
+#~ msgid "the user that was logged in when this item was changed the last time"
+#~ msgstr ""
+#~ "the user that was logged in when this item was changed the last time"
+
+#~ msgid "deleted?"
+#~ msgstr "deleted?"
+
+#~ msgid "Is this item marked as deleted?"
+#~ msgstr "Is this item marked as deleted?"
+
+#~ msgid "last changed on"
+#~ msgstr "last changed on"
+
+#~ msgid "date and time when this item was changed the last time"
+#~ msgstr "date and time when this item was changed the last time"
+
+#~ msgid "tenant’s site"
+#~ msgstr "tenant’s site"
+
+#~ msgid "site of the related customer/project/team"
+#~ msgstr "site of the related customer/project/team"
+
+#~ msgid ""
+#~ "You do not yet belong to any groups. Ask your administrator to add you to "
+#~ "one."
+#~ msgstr ""
+#~ "You do not yet belong to any groups. Ask your administrator to add you to "
+#~ "one."
+
+#~ msgid "User %s doesn't belong to any group!"
+#~ msgstr "User %s doesn't belong to any group!"
+
+#~ msgid "Standard template"
+#~ msgstr "Standard template"
+
+#~ msgid "Main content area"
+#~ msgstr "Main content area"
+
+#~ msgid "Right column"
+#~ msgstr "Right column"
+
+#~ msgid "ReStructured Text"
+#~ msgstr "ReStructured Text"
+
+#~ msgid "ReStructured Texts"
+#~ msgstr "ReStructured Texts"
+
+#~ msgid "block"
+#~ msgstr "block"
+
+#~ msgid "left"
+#~ msgstr "left"
+
+#~ msgid "right"
+#~ msgstr "right"
+
+#~ msgid "Error 404: Page Not Found"
+#~ msgstr "Error 404: Page Not Found"
+
+#~ msgid "Error 500: Server Error"
+#~ msgstr "Error 500: Server Error"
+
+#~ msgid ""
+#~ "Sorry, this page is temporalily unavailable due to a server "
+#~ "misconfiguration."
+#~ msgstr ""
+#~ "Sorry, this page is temporalily unavailable due to a server "
+#~ "misconfiguration."
+
+#~ msgid "Back"
+#~ msgstr "Back"
+
+#~ msgid "Delete"
+#~ msgstr "Delete"
+
+#~ msgid "Save"
+#~ msgstr "Save"
+
+#~ msgid "You must not edit this item!"
+#~ msgstr "You must not edit this item!"
+
+#~ msgid "About..."
+#~ msgstr "About..."
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "Logout"
+#~ msgstr "Logout"
+
+#~ msgid "Password change"
+#~ msgstr "Password change"
+
+#~ msgid "Preferences"
+#~ msgstr "Preferences"
+
+#~ msgid "Administration"
+#~ msgstr "Administration"
+
+#~ msgid "Login"
+#~ msgstr "Login"
+
+#~ msgid "Welcome!"
+#~ msgstr "Welcome!"
+
+#~ msgid "Sorry, you’re not cleared for the <em>%(app_name)s</em> module!\" "
+#~ msgstr "Sorry, you’re not cleared for the <em>%(app_name)s</em> module!\" "
+
+#~ msgid "Edit"
+#~ msgstr "Edit"
+
+#~ msgid "Sorry, that's not a valid username or password"
+#~ msgstr "Sorry, that's not a valid username or password"
+
+#~ msgid "Please logon using your username and password"
+#~ msgstr "Please logon using your username and password"
+
+#~ msgid "User name:"
+#~ msgstr "User name:"
+
+#~ msgid "Password:"
+#~ msgstr "Password:"
+
+#~ msgid "You have logged off."
+#~ msgstr "You have logged off."
+
+#~ msgid "Password change successful"
+#~ msgstr "Password change successful"
+
+#~ msgid "Your password was changed."
+#~ msgstr "Your password was changed."
+
+#~ msgid "Documentation"
+#~ msgstr "Documentation"
+
+#~ msgid "Change password"
+#~ msgstr "Change password"
+
+#~ msgid "Log out"
+#~ msgstr "Log out"
+
+#~ msgid ""
+#~ "Please enter your old password, for security's sake, and then enter your "
+#~ "new password twice so we can verify you typed it in correctly."
+#~ msgstr ""
+#~ "Please enter your old password, for security's sake, and then enter your "
+#~ "new password twice so we can verify you typed it in correctly."
+
+#~ msgid "Old password"
+#~ msgstr "Old password"
+
+#~ msgid "New password"
+#~ msgstr "New password"
+
+#~ msgid "Password (again)"
+#~ msgstr "Password (again)"
+
+#~ msgid "Change my password"
+#~ msgstr "Change my password"
+
+#~ msgid "Tasks"
+#~ msgstr "Tasks"
+
+#~ msgid "Lists"
+#~ msgstr "Lists"
+
+#~ msgid "My tasks"
+#~ msgstr "My tasks"
+
+#~ msgid "Deleted tasks"
+#~ msgstr "Deleted tasks"
+
+#~ msgid "Help"
+#~ msgstr "Help"
+
+#~ msgid "List"
+#~ msgstr "List"
+
+#~ msgid "Vouchers"
+#~ msgstr "Vouchers"
+
+#~ msgid "Upload advertising list (AdWare)"
+#~ msgstr "Upload advertising list (AdWare)"
+
+#~ msgid "Upload editorial list (AdWare)"
+#~ msgstr "Upload editorial list (AdWare)"
+
+#~ msgid "Upload editorial list (Excel)"
+#~ msgstr "Upload editorial list (Excel)"
+
+#~ msgid "Download PDFs"
+#~ msgstr "Download PDFs"
+
+#~ msgid "Issues"
+#~ msgstr "Issues"
+
+#~ msgid "Upload cover"
+#~ msgstr "Upload cover"
+
+#~ msgid "Shipping information"
+#~ msgstr "Shipping information"
+
+#~ msgid "Layouts"
+#~ msgstr "Layouts"
+
+#~ msgid "Products"
+#~ msgstr "Products"
+
+#~ msgid "New Issue"
+#~ msgstr "New Issue"
+
+#~ msgid "Users"
+#~ msgstr "Users"
+
+#~ msgid "Customers"
+#~ msgstr "Customers"
+
+#~ msgid "Orders"
+#~ msgstr "Orders"
+
+#~ msgid "Introduction"
+#~ msgstr "Introduction"
+
+#~ msgid "Cover"
+#~ msgstr "Cover"
+
+#~ msgid "Calendar"
+#~ msgstr "Calendar"
+
+#~ msgid "This Year"
+#~ msgstr "This Year"
+
+#~ msgid "This Month"
+#~ msgstr "This Month"
+
+#~ msgid "Today"
+#~ msgstr "Today"
+
+#~ msgid "Events"
+#~ msgstr "Events"
+
+#~ msgid "New Event"
+#~ msgstr "New Event"
+
+#~ msgid "Modules"
+#~ msgstr "Modules"
+
+#~ msgid "Change language"
+#~ msgstr "Change language"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancel"
+
+#~ msgid "Notes"
+#~ msgstr "Notes"
+
+#~ msgid "First"
+#~ msgstr "First"
+
+#~ msgid "Previous"
+#~ msgstr "Previous"
+
+#~ msgid "Next"
+#~ msgstr "Next"
+
+#~ msgid "Last"
+#~ msgstr "Last"
+
+#~ msgid "New Item"
+#~ msgstr "New Item"
+
+#, fuzzy
+#~ msgid "To-do lists"
+#~ msgstr "To-do Lists"
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+#~ msgid "<i>fiëé cérébrale</i> is your modular editorial system."
+#~ msgstr "<i>fiëé cérébrale</i> is your modular editorial system."
+
+#~ msgid ""
+#~ "\n"
+#~ "\t                <p>Modules (status quo of development):</p>\n"
+#~ "\t                <dl>\n"
+#~ "\t                  <dt>To-do Lists</dt>\n"
+#~ "\t                   <dd>active (August 2010)</dd>\n"
+#~ "                    <dt>Vouchers</dt>\n"
+#~ "                     <dd>in development (September 2010)</dd>\n"
+#~ "                    <dt>Classifieds</dt>\n"
+#~ "                     <dd>in development (December 2010 / January 2011)</"
+#~ "dd>\n"
+#~ "                    <dt>Crossword Puzzles</dt>\n"
+#~ "                     <dd>in development (see <i><a href=\"http://croisee."
+#~ "fiee.net\">fiëé croisée</a></i>)</dd>\n"
+#~ "                    <dt>Events</dt>\n"
+#~ "                     <dd>in planning (an old version is active)</dd>\n"
+#~ "                    <dt>Articles</dt>\n"
+#~ "                     <dd>in planning (an old version is active)</dd>\n"
+#~ "                    <dt>Web-CMS</dt>\n"
+#~ "                     <dd>ready (pluggable)</dd>\n"
+#~ "\t                </dl>\n"
+#~ "\t                "
+#~ msgstr ""
+#~ "\n"
+#~ "\t                <p>Modules (status quo of development):</p>\n"
+#~ "\t                <dl>\n"
+#~ "\t                  <dt>To-do Lists</dt>\n"
+#~ "\t                   <dd>active (August 2010)</dd>\n"
+#~ "                    <dt>Vouchers</dt>\n"
+#~ "                     <dd>in development (September 2010)</dd>\n"
+#~ "                    <dt>Classifieds</dt>\n"
+#~ "                     <dd>in development (December 2010 / January 2011)</"
+#~ "dd>\n"
+#~ "                    <dt>Crossword Puzzles</dt>\n"
+#~ "                     <dd>in development (see <i><a href=\"http://croisee."
+#~ "fiee.net\">fiëé croisée</a></i>)</dd>\n"
+#~ "                    <dt>Events</dt>\n"
+#~ "                     <dd>in planning (an old version is active)</dd>\n"
+#~ "                    <dt>Articles</dt>\n"
+#~ "                     <dd>in planning (an old version is active)</dd>\n"
+#~ "                    <dt>Web-CMS</dt>\n"
+#~ "                     <dd>ready (pluggable)</dd>\n"
+#~ "\t                </dl>\n"
+#~ "\t                "
+
+#~ msgid "Site Admin"
+#~ msgstr "Site Admin"
+
+#~ msgid "Add"
+#~ msgstr "Add"
+
+#~ msgid "History"
+#~ msgstr "History"
+
+#~ msgid "Please correct the error below."
+
+#~ msgid_plural "Please correct the errors below."
+#~ msgstr[0] "Please correct the error below."
+#~ msgstr[1] "Please correct the errors below."
+
+#~ msgid "Add %(name)s"
+#~ msgstr "Add %(name)s"
+
+#~ msgid "Filter"
+#~ msgstr "Filter"
+
+#~ msgid "Models available in the %(name)s application."
+#~ msgstr "Models available in the %(name)s application."
+
+#~ msgid "Change"
+#~ msgstr "Change"
+
+#~ msgid "You don't have permission to edit anything."
+#~ msgstr "You don't have permission to edit anything."
+
+#~ msgid "Recent Actions"
+#~ msgstr "Recent Actions"
+
+#~ msgid "My Actions"
+#~ msgstr "My Actions"
+
+#~ msgid "None available"
+#~ msgstr "None available"
+
+#~ msgid "Unknown content"
+#~ msgstr "Unknown content"
+
+#, fuzzy
+#~ msgid "Delete entire list"
+#~ msgstr "Delete Event"
+
+#, fuzzy
+#~ msgid "Add a list:"
+#~ msgstr "Add %(name)s"
+
+#, fuzzy
+#~ msgid "Add task"
+#~ msgstr "Add %(name)s"
+
+#, fuzzy
+#~ msgid "Del"
+#~ msgstr "Delete"
+
+#, fuzzy
+#~ msgid "Comment:"
+#~ msgstr "Add Event"
+
+#, fuzzy
+#~ msgid "Continue..."
+#~ msgstr "Continues"
+
+#~ msgid "logout"
+#~ msgstr "logout"
+
+#~ msgid "login"
+#~ msgstr "login"
+
+#~ msgid "search"
+#~ msgstr "search"
+
+#~ msgid "Imprint"
+#~ msgstr "Imprint"
+
+#~ msgid "Person template"
+#~ msgstr "Person template"
+
+#, fuzzy
+#~ msgid "Calendars"
+#~ msgstr "Calendar"
+
+#~ msgid "center"
+#~ msgstr "center"
+
+#~ msgid "TIME_FORMAT"
+#~ msgstr "G:i"
+
+#~ msgid "Cannot remove this frame while inside this admin section."
+#~ msgstr "Cannot remove this frame while inside this admin section."
+
+#~ msgid "remove"
+#~ msgstr "remove"
+
+#~ msgid "Reload"
+#~ msgstr "Reload"
+
+#~ msgid "Expand all"
+#~ msgstr "Expand all"
+
+#~ msgid "Collapse all"
+#~ msgstr "Collapse all"
+
+#~ msgid "Insert after"
+#~ msgstr "Insert after"
+
+#~ msgid "Insert before"
+#~ msgstr "Insert before"
+
+#~ msgid "Insert as child"
+#~ msgstr "Insert as child"
+
+#~ msgid "Foto:"
+#~ msgstr "Photo: "
+
+#~ msgid "Starts"
+#~ msgstr "Starts"
+
+#~ msgid "DATETIME_FORMAT"
+#~ msgstr "Y-m-d G:i"
+
+#~ msgid "Ends"
+#~ msgstr "Ends"
+
+#~ msgid "Reoccurs"
+#~ msgstr "Reoccurs"
+
+#~ msgid "until"
+#~ msgstr "until"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid "%(start_date)s"
+#~ msgstr "%(start_date)s"
+
+#~ msgid "%(end_date)s"
+#~ msgstr "%(end_date)s"
+
+#~ msgid "Question"
+#~ msgstr "Question"
+
+#~ msgid ""
+#~ "Do you want to cancel this occurrence or delete all occurrences of this "
+#~ "event?"
+#~ msgstr ""
+#~ "Do you want to cancel this occurrence or delete all occurrences of this "
+#~ "event?"
+
+#~ msgid "This is a recurring event"
+#~ msgstr "This is a recurring event"
+
+#~ msgid "Do you want to edit this occurrence or all occurrences?"
+#~ msgstr "Do you want to edit this occurrence or all occurrences?"
+
+#~ msgid "Edit Event"
+#~ msgstr "Edit Event"
+
+#~ msgid "YEAR_MONTH_FORMAT"
+#~ msgstr "F Y"
+
+#~ msgid "Week"
+#~ msgstr "Week"
+
+#~ msgid "Month"
+#~ msgstr "Month"
+
+#~ msgid "Year"
+#~ msgstr "Year"
+
+#~ msgid "Available Calendars"
+#~ msgstr "Available Calendars"
+
+#~ msgid "Small Month"
+#~ msgstr "Small Month"
+
+#~ msgid "1 Month"
+#~ msgstr "1 Month"
+
+#~ msgid "3 Months"
+#~ msgstr "3 Months"
+
+#~ msgid "Weekly"
+#~ msgstr "Weekly"
+
+#~ msgid "Daily"
+#~ msgstr "Daily"
+
+#~ msgid "Feed"
+#~ msgstr "Feed"
+
+#~ msgid "Three Months"
+#~ msgstr "Three Months"
+
+#~ msgid "This week"
+#~ msgstr "This week"
+
+#~ msgid "Current Month"
+#~ msgstr "Current Month"
+
+#~ msgid "Current Year"
+#~ msgstr "Current Year"
+
+#~ msgid "Are you sure that you really want to cancel this occurrence?"
+#~ msgstr "Are you sure that you really want to cancel this occurrence?"
+
+#~ msgid "From"
+#~ msgstr "From"
+
+#~ msgid "to"
+#~ msgstr "to"
+
+#~ msgid "%(end_recurring_date)s"
+#~ msgstr "%(end_recurring_date)s"
+
+#~ msgid "Never. This is a 'one time only' event."
+#~ msgstr "Never. This is a 'one time only' event."
+
+#~ msgid "Day"
+#~ msgstr "Day"
+
+#~ msgid "Three Month Calendar"
+#~ msgstr "Three Month Calendar"
+
+#~ msgid "Full Year Calendar"
+#~ msgstr "Full Year Calendar"
+
+#~ msgid "Startseite"
+#~ msgstr "Home"
+
+#~ msgid "Impressum"
+#~ msgstr "Imprint"
+
+#~ msgid "monatlich"
+#~ msgstr "monthly"
