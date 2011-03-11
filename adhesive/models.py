@@ -44,6 +44,12 @@ def delete_related_Notes(sender, **kwargs):
     """
     If an objects gets deleted, delete also all Notes on it
     """
-    Note.objects.filter(content_object=sender).delete()
+    try:
+        int(sender.pk)
+    except TypeError, e:
+        print e
+        return
+    sender_type = ContentType.objects.get_for_model(sender)
+    Note.objects.filter(content_type__pk=sender_type.pk, object_id=int(sender.pk)).delete()
 
 post_delete.connect(delete_related_Notes)
