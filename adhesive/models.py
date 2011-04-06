@@ -7,6 +7,8 @@ from django.template.loader import render_to_string
 from django.utils.translation import ugettext as _
 from dorsale.models import DorsaleBaseModel
 from django.db import models
+import logging
+logger = logging.getLogger(__name__)
 
 class Note(DorsaleBaseModel):
     """
@@ -47,9 +49,10 @@ def delete_related_Notes(sender, **kwargs):
     try:
         int(sender.pk)
     except TypeError, e:
-        print e
-        return
-    sender_type = ContentType.objects.get_for_model(sender)
-    Note.objects.filter(content_type__pk=sender_type.pk, object_id=int(sender.pk)).delete()
+        logger.warning(e) # exception would stop
+        logger.warning(u'%s was deleted, but its PK is not an integer. Cannot look for and delete attached notes.' % sender)
+    else:
+        sender_type = ContentType.objects.get_for_model(sender)
+        Note.objects.filter(content_type__pk=sender_type.pk, object_id=int(sender.pk)).delete()
 
 post_delete.connect(delete_related_Notes)
