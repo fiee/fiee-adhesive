@@ -8,7 +8,9 @@ from django.utils.translation import ugettext as _
 from dorsale.models import DorsaleBaseModel
 from django.db import models
 import logging
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
+from django.conf import settings
+logger = logging.getLogger(settings.PROJECT_NAME) 
 
 class Note(DorsaleBaseModel):
     """
