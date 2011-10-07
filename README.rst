@@ -29,6 +29,8 @@ BSD, like Django itself, see LICENSE_
 
 famfamfam_ icons appear under Creative Commons Attribution license (CC BY 3.0)
 
+`jQuery cookie`_ plugin is dual licensed, MIT / GPL.
+
 
 Author(s)
 ---------
@@ -36,9 +38,11 @@ Author(s)
 * fiëé visuëlle, Henning Hraban Ramm, <hraban@fiee.net>, http://www.fiee.net
 * contains code from the Django project and other sources (as indicated in the code)
 * contains famfamfam_ silk icons by Mark James
+* contains jQuery cookie plugin by Klaus Hartl
 
 .. _LICENSE: ./fiee-adhesive/raw/master/LICENSE
 .. _fiee-dorsale: https://github.com/fiee/fiee-dorsale
 .. _django-registration: https://bitbucket.org/ubernostrum/django-registration/
 .. _jQuery: http://docs.jquery.com/
+.. _jQuery cookie: https://github.com/carhartl/jquery-cookie
 .. _famfamfam: http://www.famfamfam.com/lab/icons/silk/
