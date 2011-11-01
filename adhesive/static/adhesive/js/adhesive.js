@@ -132,7 +132,6 @@ $(function(){
   /* use Django's CSRF tokens in AJAX queries
    * requires jquery.cookie
    */ 
-  */
   $('html').ajaxSend(function(event, xhr, settings) {
       function getCookie(name) {
           var cookieValue = null;
