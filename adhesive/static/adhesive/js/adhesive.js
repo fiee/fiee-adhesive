@@ -155,7 +155,7 @@ $(function(){
   });
 
   /* Initialize all notes */
-  $('div.adhesive').each(function(index){ init_adhesive(this); });
+  $('div.adhesive:not(.adhesive_template)').each(function(index){ init_adhesive(this); });
   
   /* Show/hide notes */
   $('#adhesive_toggle').click(function(){
