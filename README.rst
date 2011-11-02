@@ -27,18 +27,18 @@ How to use
 * Use staticfiles_ to include adhésive’s media.
 * Setup adhésive’s urls::
 
-  url(r'^notes/', include('adhesive.urls')),
+    url(r'^notes/', include('adhesive.urls')),
 
 * Load jQuery_ in your template head.
 * Include "adhesive/head.html" within your template head (loads CSS and JS from ``STATIC_URL/adhesive/css|js/``).
 * Include "adhesive/notes.html" within your detail-view template, where you’d like the notes icons to appear (e.g in a sidebar).
 * ``notes.html`` expects 'notes', 'item' and 'item_type' in the context::
 
-  {
-    item: your_object,
-    notes: item.notes.all(), # with 'NotesMixin'
-    item_type: ContentType.objects.get_for_model(item),
-  }
+    {
+      item: your_object,
+      notes: item.notes.all(), # with 'NotesMixin'
+      item_type: ContentType.objects.get_for_model(item),
+    }
 
 Now, if you open a detail view on one of your models, you should see a “new note” icon.
 Click on it to create a note. Type some text in it. Move it around.
@@ -69,11 +69,11 @@ Hints
 Known Issues
 ------------
 
-* No proper permission checks
 * path ‘/notes/’ is hardcoded in JS
 * names of context variables ``item``, ``item_type`` and ``notes`` are hardcoded in template
-* notes are silently saved after pressing tab
-* lotsa...
+* notes not always saved on lost focus (add some indicator?)
+* incomplete permission checks
+* probably more dependencies
 
 
 License
@@ -90,9 +90,9 @@ Author(s)
 ---------
 
 * fiëé visuëlle, Henning Hraban Ramm, <hraban@fiee.net>, http://www.fiee.net
-* contains code from the Django project and other sources (as indicated in the code)
+* contains code from the Django_ project and other sources (as indicated in the code)
 * contains famfamfam_ silk icons by Mark James
-* contains jQuery cookie plugin by Klaus Hartl
+* contains `jQuery cookie`_ plugin by Klaus Hartl
 
 .. _LICENSE: ./fiee-adhesive/raw/master/LICENSE
 .. _fiee-dorsale: https://github.com/fiee/fiee-dorsale
