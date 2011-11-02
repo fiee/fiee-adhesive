@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .adhesive_icons {
   position: relative;
   width: 3em;
