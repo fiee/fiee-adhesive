@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from django.core.exceptions import ObjectDoesNotExist
 from dorsale.forms import ModelFormFactory
@@ -6,6 +5,9 @@ from dorsale.json import JSONResponse
 from models import Note
 
 def check_request(request):
+    """
+    Check authorization and request method
+    """
     data = {'info': '', 'error': None}
     if request.user.is_anonymous():
         data['error'] = 'not authorized'
@@ -17,7 +19,7 @@ def check_request(request):
 
 def json_get_for_object(request, object_id):
     """
-    AJAX query - not yet usable
+    Get notes of some object - not yet usable. Makes no sense without object type.
     """
     data = {}
     try:
@@ -28,7 +30,7 @@ def json_get_for_object(request, object_id):
 
 def json_get(request, id):
     """
-    AJAX query
+    Get note info by id. No permissions check.
     """
     data = {'info': ''}
     try:
@@ -43,7 +45,7 @@ def json_get(request, id):
 
 def json_save(request, id):
     """
-    AJAX query
+    Save a note. User needs permissions to add/change a note.
     """
     data = check_request(request)
     try:
@@ -70,7 +72,7 @@ def json_save(request, id):
 
 def delete(request, id):
     """
-    AJAX query
+    Delete a note. User needs permission to delete a note.
     """
     data = check_request(request)
     try:

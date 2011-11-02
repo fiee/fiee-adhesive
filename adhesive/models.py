@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from django.contrib.contenttypes import generic
 from django.contrib.contenttypes.models import ContentType
