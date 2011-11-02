@@ -37,10 +37,10 @@ class Note(DorsaleBaseModel):
         return render_to_string('adhesive/info.txt', {'note':self})
 
 
-class DorsaleAnnotatedBaseModel(DorsaleBaseModel):
-        
+class NotesMixin(object):
     notes = generic.GenericRelation(Note)
-    
+
+class DorsaleAnnotatedBaseModel(DorsaleBaseModel, NotesMixin):
     class Meta:
         abstract = True
 
