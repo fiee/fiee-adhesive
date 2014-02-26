@@ -12,7 +12,7 @@ Its own Notes model is based on `fiëé dorsâle`_, but your models don’t need
 Dependencies
 ------------
 
-* Django_ 1.3 (may work with 1.1.) with included contributions
+* Django_ 1.6 with included contributions
 * django-registration_ (or compatible)
 * fiee-dorsale_
 * jQuery_
@@ -98,7 +98,7 @@ Author(s)
 .. _fiee-dorsale: https://github.com/fiee/fiee-dorsale
 .. _`fiëé dorsâle`: https://github.com/fiee/fiee-dorsale
 .. _Django: http://www.djangoproject.com
-.. _staticfiles: https://docs.djangoproject.com/en/1.3/ref/contrib/staticfiles/
+.. _staticfiles: https://docs.djangoproject.com/en/1.6/ref/contrib/staticfiles/
 .. _django-registration: https://bitbucket.org/ubernostrum/django-registration/
 .. _jQuery: http://docs.jquery.com/
 .. _jQuery cookie: https://github.com/carhartl/jquery-cookie

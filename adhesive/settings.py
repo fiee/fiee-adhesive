@@ -3,12 +3,12 @@
 """
 This is just for 'manage.py makemessages -a'
 """
-from django.utils.translation import ugettext_lazy as _
+_ = lambda s: s
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-TIME_ZONE = 'Europe/Zurich'
+TIME_ZONE = 'Europe/Berlin'
 LANGUAGE_CODE = 'de'
 LANGUAGES = (('de', _(u'German')),
              ('en', _(u'English')),

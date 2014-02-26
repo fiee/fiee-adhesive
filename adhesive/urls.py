@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls import patterns, url
 from adhesive.models import Note
 import adhesive.views as sv
 

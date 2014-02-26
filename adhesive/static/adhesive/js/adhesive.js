@@ -67,7 +67,7 @@ function new_adhesive() {
   adhesive.removeClass('adhesive_template hidden').appendTo('#adhesive_start');
   init_adhesive(adhesive);
   $('#adhesive_toggle').removeClass('hidden');
-  return adhesive
+  return adhesive;
 }
 
 function save_adhesive(id) {
