@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from django.contrib.sessions.models import Session
 from django.contrib.contenttypes import generic
 from django.contrib.contenttypes.models import ContentType
 from django.db.models.signals import post_delete
@@ -36,10 +37,13 @@ class Note(DorsaleBaseModel):
         return render_to_string('adhesive/info.txt', {'note':self})
 
 
-class NotesMixin(object):
+class NotesMixin(models.Model):
     notes = generic.GenericRelation(Note)
 
-class DorsaleAnnotatedBaseModel(DorsaleBaseModel, NotesMixin):
+    class Meta:
+        abstract = True
+
+class DorsaleAnnotatedBaseModel(NotesMixin, DorsaleBaseModel):
     class Meta:
         abstract = True
 
@@ -51,7 +55,7 @@ def delete_related_Notes(sender, **kwargs):
         int(sender.pk)
     except TypeError, e:
         logger.warning(e) # exception would stop
-        logger.warning(u'%s was deleted, but its PK is not an integer. Cannot look for and delete attached notes.' % sender)
+        logger.warning(u'fiee adhesive: %s was deleted, but its PK is not an integer. Cannot look for and delete attached notes.' % sender)
     else:
         sender_type = ContentType.objects.get_for_model(sender)
         Note.objects.filter(content_type__pk=sender_type.pk, object_id=int(sender.pk)).delete()
