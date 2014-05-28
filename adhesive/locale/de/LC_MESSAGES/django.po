@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fiee adhesive\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-09 20:03+0100\n"
+"POT-Creation-Date: 2014-05-28 11:07+0600\n"
 "PO-Revision-Date: 2011-03-09 20:04+0100\n"
 "Last-Translator: Henning Hraban Ramm <hraban@fiee.net>\n"
 "Language-Team: fiëé visuëlle <hraban@fiee.net>\n"
@@ -28,37 +28,36 @@ msgstr "Klebenotiz"
 msgid "Sticky Notes"
 msgstr "Klebenotizen"
 
-#: models.py:15
-#: templates/sticky/notes.html:26
-#: templates/sticky/notes.html.py:47
+#: models.py:19 templates/adhesive/notes.html:26
+#: templates/adhesive/notes.html.py:47
 msgid "Note"
 msgstr "Notiz"
 
-#: models.py:16
+#: models.py:20
 msgid "Placement"
 msgstr "Platzierung"
 
-#: models.py:16
+#: models.py:20
 msgid "x,y,width,height [px]"
 msgstr "x, y, Breite, Höhe [px]"
 
-#: models.py:18
+#: models.py:22
 msgid "content type"
 msgstr "Inhaltstyp"
 
-#: models.py:19
+#: models.py:23
 msgid "object id"
 msgstr "Objekt-ID"
 
-#: models.py:23
+#: models.py:27
 msgid "note"
 msgstr "Notiz"
 
-#: models.py:24
+#: models.py:28
 msgid "notes"
 msgstr "Notizen"
 
-#: models.py:26
+#: models.py:30
 msgid "Can view note"
 msgstr "Darf Notiz sehen"
 
@@ -70,50 +69,56 @@ msgstr "Deutsch"
 msgid "English"
 msgstr "Englisch"
 
-#: templates/sticky/notes.html:4
+#: templates/adhesive/info.txt:1
+#, python-format
+msgid "Note #%(id)s on %(type)s #%(oid)s,"
+msgstr "Notiz Nr.%(id)s zu %(type)s Nr.%(oid)s,"
+
+#: templates/adhesive/info.txt:2
+#, python-format
+msgid "created by %(createdby)s on %(createdon)s,"
+msgstr "angelegt von %(createdby)s am %(createdon)s,"
+
+#: templates/adhesive/info.txt:3
+#, python-format
+msgid "last change by %(lastchangedby)s on %(lastchangedon)s"
+msgstr "zuletzt geändert von %(lastchangedby)s am %(lastchangedon)s"
+
+#: templates/adhesive/notes.html:4
 msgid "note icon"
 msgstr "Klebenotiz-Icon"
 
-#: templates/sticky/notes.html:4
+#: templates/adhesive/notes.html:4
 msgid "Show/hide notes"
 msgstr "Notizen anzeigen/verbergen"
 
-#: templates/sticky/notes.html:7
+#: templates/adhesive/notes.html:7
 msgid "note icon with plus"
 msgstr "Klebenotiz-Icon mit Plus"
 
-#: templates/sticky/notes.html:7
+#: templates/adhesive/notes.html:7
 msgid "Add new note"
 msgstr "Neue Notiz anlegen"
 
-#: templates/sticky/notes.html:11
+#: templates/adhesive/notes.html:11
 msgid "Confirm note deletion"
 msgstr "Löschen der Notiz bestätigen"
 
-#: templates/sticky/notes.html:12
+#: templates/adhesive/notes.html:12
 msgid "Do you really want to delete this note?"
 msgstr "Möchten Sie diese Notiz wirklich löschen?"
 
-#: templates/sticky/notes.html:15
+#: templates/adhesive/notes.html:15
 msgid "Note details"
 msgstr "Notiz-Einzelheiten"
 
-#: templates/sticky/notes.html:22
+#: templates/adhesive/notes.html:22
 msgid "Close and delete note"
 msgstr "Notiz schließen und löschen"
 
-#: templates/sticky/notes.html:23
+#: templates/adhesive/notes.html:23
 msgid "Note is not yet saved"
 msgstr "Die Notiz ist noch nicht gespeichert"
-
-#~ msgid "Note #%(id)s on %(type)s #%(oid)s,"
-#~ msgstr "Notiz Nr.%(id)s zu %(type)s Nr.%(oid)s,"
-
-#~ msgid "created by %(createdby)s on %(createdon)s,"
-#~ msgstr "angelegt von %(createdby)s am %(createdon)s,"
-
-#~ msgid "last change by %(lastchangedby)s on %(lastchangedon)s"
-#~ msgstr "zuletzt geändert von %(lastchangedby)s am %(lastchangedon)s"
 
 #~ msgid "fiëé cérébrale"
 #~ msgstr "fiëé cérébrale"
@@ -545,7 +550,6 @@ msgstr "Die Notiz ist noch nicht gespeichert"
 #~ msgstr "Historie"
 
 #~ msgid "Please correct the error below."
-
 #~ msgid_plural "Please correct the errors below."
 #~ msgstr[0] "Bitte den aufgeführten Fehler korrigieren."
 #~ msgstr[1] "Bitte die aufgeführten Fehler korrigieren."
