@@ -4,6 +4,7 @@ from dorsale.forms import ModelFormFactory
 from dorsale.json import JSONResponse
 from models import Note
 
+
 def check_request(request):
     """
     Check authorization and request method
@@ -17,9 +18,11 @@ def check_request(request):
         return JSONResponse(data, status=400)
     return data
 
+
 def json_get_for_object(request, object_id):
     """
-    Get notes of some object - not yet usable. Makes no sense without object type.
+    Get notes of some object - not yet usable.
+    Makes no sense without object type.
     """
     data = {}
     try:
@@ -27,6 +30,7 @@ def json_get_for_object(request, object_id):
     except Exception, e:
         return JSONResponse(e, status=404)
     return JSONResponse(data)
+
 
 def json_get(request, id):
     """
@@ -43,6 +47,7 @@ def json_get(request, id):
         return JSONResponse(e, status=404)
     return JSONResponse(data)
 
+
 def json_save(request, id):
     """
     Save a note. User needs permissions to add/change a note.
@@ -57,7 +62,7 @@ def json_save(request, id):
     except (ValueError, ObjectDoesNotExist):
         if not request.user.has_perm('adhesive.add_note'):
             return JSONResponse(data, status=401)
-        form = ModelFormFactory(Note, request.POST, user=request.user) 
+        form = ModelFormFactory(Note, request.POST, user=request.user)
         form.id = None
         data['is_new'] = True
     if form.is_valid():
@@ -69,6 +74,7 @@ def json_save(request, id):
         data['error'] = form.errors
         return JSONResponse(data, status=400)
     return JSONResponse(data)
+
 
 def delete(request, id):
     """

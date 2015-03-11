@@ -8,16 +8,22 @@ from django.utils.translation import ugettext as _
 from dorsale.models import DorsaleBaseModel
 from django.db import models
 import logging
-#logger = logging.getLogger(__name__)
+# logger = logging.getLogger(__name__)
 from django.conf import settings
-logger = logging.getLogger(settings.PROJECT_NAME) 
+logger = logging.getLogger(settings.PROJECT_NAME)
+
 
 class Note(DorsaleBaseModel):
     """
     A generic model for adding simple, arbitrary notes to other models.
     """
     note = models.TextField(_(u'Note'))
-    placement = models.CommaSeparatedIntegerField(verbose_name=_(u'Placement'), max_length=23, default='600,100,100,60', blank=True, help_text=_(u'x,y,width,height [px]'))
+    placement = models.CommaSeparatedIntegerField(
+        verbose_name=_(u'Placement'),
+        max_length=23,
+        default='600,100,100,60',
+        blank=True,
+        help_text=_(u'x,y,width,height [px]'))
 
     content_type = models.ForeignKey(ContentType, verbose_name=_(u'content type'))
     object_id = models.PositiveIntegerField(_(u'object id'))
@@ -32,7 +38,7 @@ class Note(DorsaleBaseModel):
 
     def __unicode__(self):
         return self.note
-    
+
     def info_text(self):
         return render_to_string('adhesive/info.txt', {'note':self})
 
@@ -43,9 +49,11 @@ class NotesMixin(models.Model):
     class Meta:
         abstract = True
 
+
 class DorsaleAnnotatedBaseModel(NotesMixin, DorsaleBaseModel):
     class Meta:
         abstract = True
+
 
 def delete_related_Notes(sender, **kwargs):
     """
@@ -54,10 +62,14 @@ def delete_related_Notes(sender, **kwargs):
     try:
         int(sender.pk)
     except TypeError, e:
-        logger.warning(e) # exception would stop
-        logger.warning(u'fiee adhesive: %s was deleted, but its PK is not an integer. Cannot look for and delete attached notes.' % sender)
+        logger.warning(e)  # exception would stop
+        logger.warning(
+            (u'fiee adhesive: %s was deleted, but its PK is not an' +
+            u' integer. Cannot look for and delete attached notes.') % sender)
     else:
         sender_type = ContentType.objects.get_for_model(sender)
-        Note.objects.filter(content_type__pk=sender_type.pk, object_id=int(sender.pk)).delete()
+        Note.objects.filter(
+            content_type__pk=sender_type.pk,
+            object_id=int(sender.pk)).delete()
 
 post_delete.connect(delete_related_Notes)
