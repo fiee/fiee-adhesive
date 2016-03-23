@@ -12,7 +12,7 @@ Its own Notes model is based on `fiëé dorsâle`_, but your models don’t need
 Dependencies
 ------------
 
-* Django_ 1.6 with included contributions
+* Django_ 1.6+ with included contributions
 * django-registration_ (or compatible)
 * fiee-dorsale_
 * jQuery_
@@ -83,7 +83,7 @@ BSD, like Django itself, see LICENSE_
 
 famfamfam_ icons appear under Creative Commons Attribution license (CC BY 3.0)
 
-`jQuery cookie`_ plugin is dual licensed, MIT / GPL.
+js.cookie_ is MIT licensed.
 
 
 Author(s)
@@ -92,7 +92,7 @@ Author(s)
 * fiëé visuëlle, Henning Hraban Ramm, <hraban@fiee.net>, http://www.fiee.net
 * contains code from the Django_ project and other sources (as indicated in the code)
 * contains famfamfam_ silk icons by Mark James
-* contains `jQuery cookie`_ plugin by Klaus Hartl
+* contains js.cookie_ by Klaus Hartl et.al.
 
 .. _LICENSE: ./fiee-adhesive/raw/master/LICENSE
 .. _fiee-dorsale: https://github.com/fiee/fiee-dorsale
@@ -101,5 +101,5 @@ Author(s)
 .. _staticfiles: https://docs.djangoproject.com/en/1.6/ref/contrib/staticfiles/
 .. _django-registration: https://bitbucket.org/ubernostrum/django-registration/
 .. _jQuery: http://docs.jquery.com/
-.. _jQuery cookie: https://github.com/carhartl/jquery-cookie
+.. _js.cookie: https://github.com/js-cookie/js-cookie/tree/v2.1.0
 .. _famfamfam: http://www.famfamfam.com/lab/icons/silk/

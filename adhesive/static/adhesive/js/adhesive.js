@@ -130,9 +130,10 @@ function delete_adhesive(id) {
 $(function(){
   $.ajaxSetup({ cache: false });
   /* use Django's CSRF tokens in AJAX queries
-   * requires jquery.cookie
+   * requires js.cookie
    */ 
   $('html').ajaxSend(function(event, xhr, settings) {
+    /*
       function getCookie(name) {
           var cookieValue = null;
           if (document.cookie && document.cookie != '') {
@@ -148,9 +149,10 @@ $(function(){
           }
           return cookieValue;
       }
+      */
       if (!(/^http:.*/.test(settings.url) || /^https:.*/.test(settings.url))) {
           // Only send the token to relative URLs i.e. locally.
-          xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+          xhr.setRequestHeader("X-CSRFToken", Cookies.get('csrftoken'));
       }
   });
 
