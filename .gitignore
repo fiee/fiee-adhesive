@@ -20,3 +20,4 @@ build
 _build
 dist
 migrations/
+.AppleDouble
