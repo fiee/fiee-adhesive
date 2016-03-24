@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.contrib.sessions.models import Session
-from django.contrib.contenttypes import generic
+from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation
 from django.contrib.contenttypes.models import ContentType
 from django.db.models.signals import post_delete
 from django.template.loader import render_to_string
@@ -27,7 +27,7 @@ class Note(DorsaleBaseModel):
 
     content_type = models.ForeignKey(ContentType, verbose_name=_(u'content type'))
     object_id = models.PositiveIntegerField(_(u'object id'))
-    content_object = generic.GenericForeignKey('content_type', 'object_id')
+    content_object = GenericForeignKey('content_type', 'object_id')
 
     class Meta:
         verbose_name = _('note')
@@ -44,7 +44,7 @@ class Note(DorsaleBaseModel):
 
 
 class NotesMixin(models.Model):
-    notes = generic.GenericRelation(Note)
+    notes = GenericRelation(Note)
 
     class Meta:
         abstract = True

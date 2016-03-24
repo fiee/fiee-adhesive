@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 import os
 
 setup(name='fiee-adhesive',
-      version='0.0.6',
+      version='0.0.7',
       description=u'Sticky notes for your (dorsale based) django models',
       keywords='sticky notes generic attachment',
       author='Henning Hraban Ramm',
@@ -28,6 +28,6 @@ setup(name='fiee-adhesive',
                    'Topic :: Utilities',
                    'Natural Language :: English',
                    'Natural Language :: German',],
-      install_requires=['Django>=1.6', 'django-registration', 'fiee-dorsale',],
+      install_requires=['Django>=1.8', 'django-registration', 'fiee-dorsale',],
       zip_safe=False,
       )
