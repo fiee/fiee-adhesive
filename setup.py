@@ -28,6 +28,6 @@ setup(name='fiee-adhesive',
                    'Topic :: Utilities',
                    'Natural Language :: English',
                    'Natural Language :: German',],
-      install_requires=['Django>=1.8', 'django-registration', 'fiee-dorsale',],
+      install_requires=['Django>=1.8', 'django-registration', 'fiee-dorsale>=0.0.8',],
       zip_safe=False,
       )
