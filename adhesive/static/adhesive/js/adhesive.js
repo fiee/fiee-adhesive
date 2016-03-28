@@ -87,13 +87,13 @@ function save_adhesive(id) {
     }, 
     function(data){
       /* update management info */
-      if (data['is_new']) { 
+      if (data.is_new) { 
         var adhesive = $('#adhesive_new');
-        adhesive.attr('id', 'adhesive_'+data['id'])
-        .find('input[name|=id]').val(data['id'])
-        .siblings('textarea').attr('id', 'id_adhesive_'+data['id']+'_note');
+        adhesive.attr('id', 'adhesive_'+data.id)
+        .find('input[name|=id]').val(data.id)
+        .siblings('textarea').attr('id', 'id_adhesive_'+data.id+'_note');
       }
-      $('#adhesive_'+data['id']+' .adhesive_head .adhesive_info').attr('title', data['info']);
+      $('#adhesive_'+data.id+' .adhesive_head .adhesive_info').attr('title', data.info);
     }, 'json');
 
   }
@@ -102,7 +102,7 @@ function save_adhesive(id) {
 function delete_adhesive(id) {
   /* id = pure numerical id */
   var adhesive = $('#adhesive_'+id);
-  if ((adhesive.find('textarea').val()=='')||(id=='new')) {
+  if ((adhesive.find('textarea').val()==='')||(id=='new')) {
     adhesive.remove();
   } else {
     $('#adhesive_delete_dialog')
@@ -133,6 +133,7 @@ $(function(){
    * requires js.cookie
    */ 
   $('html').ajaxSend(function(event, xhr, settings) {
+      console.log(Cookies.get('csrftoken'));
     /*
       function getCookie(name) {
           var cookieValue = null;
@@ -161,11 +162,13 @@ $(function(){
   
   /* Show/hide notes */
   $('#adhesive_toggle').click(function(){
-    $('div.adhesive').toggle();
+    $('div.adhesive').toggleClass('hidden');
+    return true;
   });
   
   /* New note */
   $('#adhesive_add').click(function(){
-    new_adhesive(); 
+    new_adhesive();
+    return false; 
   });
 });
