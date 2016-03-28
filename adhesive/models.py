@@ -59,6 +59,9 @@ def delete_related_Notes(sender, **kwargs):
     """
     If an objects gets deleted, delete also all Notes on it
     """
+    if type(sender) is Session:
+        # most common source of warnings
+        return
     try:
         int(sender.pk)
     except TypeError, e:
