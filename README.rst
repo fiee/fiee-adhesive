@@ -12,10 +12,10 @@ Its own Notes model is based on `fiëé dorsâle`_, but your models don’t need
 Dependencies
 ------------
 
-* Django_ 1.6+ with included contributions
+* Django_ 1.8+ with included contributions
 * django-registration_ (or compatible)
-* fiee-dorsale_
-* jQuery_
+* fiee-dorsale_ 0.0.9+
+* jQuery_ 1.x
 
 
 How to use
@@ -74,6 +74,7 @@ Known Issues
 * notes not always saved on lost focus (add some indicator?)
 * incomplete permission checks
 * probably more dependencies
+* no tests, no demo
 
 
 License
