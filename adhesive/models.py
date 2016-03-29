@@ -59,16 +59,15 @@ def delete_related_Notes(sender, **kwargs):
     """
     If an objects gets deleted, delete also all Notes on it
     """
-    if type(sender) is Session:
-        # most common source of warnings
+    if 'django.contrib.sessions.models.Session' in str(sender):
+        # most common source of warnings are deleted Sessions
+        # but their type is ModelBase, even if their class is as above??
         return
     try:
         int(sender.pk)
     except TypeError, e:
-        logger.warning(e)  # exception would stop
         logger.warning(
-            (u'fiee adhesive: %s was deleted, but its PK is not an' +
-            u' integer. Cannot look for and delete attached notes.') % sender)
+            u'fiee adhesive: %s: %s was deleted, but its PK is not an integer. Cannot look for and delete attached notes.', e, sender)
     else:
         sender_type = ContentType.objects.get_for_model(sender)
         Note.objects.filter(
