@@ -14,8 +14,9 @@ Dependencies
 
 * Django_ 1.8+ with included contributions
 * django-registration_ (or compatible)
-* fiee-dorsale_ 0.0.9+
+* fiee-dorsale_ 0.1.0+
 * jQuery_ 1.x
+* js.cookie_ 2.1.0+ (included)
 
 
 How to use
@@ -61,16 +62,20 @@ Hints
 
 * Don’t use class ``adhesive`` in your templates.
 * Don’t use a ``notes`` field in a model that you want to use with adhésive.
-* Don’t use ``notes``, ``item``, ``item_type`` in a notes-enabled template for anything else than adhésive notes, the currently displayed object and its ContentType.
+* Don’t use ``notes``, ``item``, ``item_type`` in a notes-enabled template 
+  for anything else than adhésive notes, the currently displayed object 
+  and its ContentType.
 
-* You can override ``adhesive/info.txt`` template for different management info in mouseover.
+* You can override ``adhesive/info.txt`` template for different management info 
+  in mouseover.
 
 
 Known Issues
 ------------
 
 * path ‘/notes/’ is hardcoded in JS
-* names of context variables ``item``, ``item_type`` and ``notes`` are hardcoded in template
+* names of context variables ``item``, ``item_type`` and ``notes`` 
+  are hardcoded in template
 * notes not always saved on lost focus (add some indicator?)
 * incomplete permission checks
 * probably more dependencies
@@ -80,7 +85,7 @@ Known Issues
 License
 -------
 
-BSD, like Django itself, see LICENSE_
+BSD, see LICENSE_
 
 famfamfam_ icons appear under Creative Commons Attribution license (CC BY 3.0)
 

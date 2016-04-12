@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This is just for 'manage.py makemessages -a'
+This is just for 'django-admin makemessages -a'
 """
 _ = lambda s: s
 
