@@ -1,11 +1,12 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
+from __future__ import absolute_import
+from __future__ import unicode_literals
 from setuptools import setup, find_packages
 import os
 
 setup(name='fiee-adhesive',
-      version='0.0.9',
-      description=u'Sticky notes for your (dorsale based) django models',
+      version='0.0.10',
+      description='Sticky notes for your (dorsale based) django models',
       keywords='sticky notes generic attachment',
       author='Henning Hraban Ramm',
       author_email='hraban@fiee.net',
@@ -28,6 +29,6 @@ setup(name='fiee-adhesive',
                    'Topic :: Utilities',
                    'Natural Language :: English',
                    'Natural Language :: German',],
-      install_requires=['Django>=1.8', 'django-registration', 'fiee-dorsale>=0.1.0',],
+      install_requires=['Django>=1.8', 'django-registration>=2', 'fiee-dorsale>=0.1.2',],
       zip_safe=False,
       )

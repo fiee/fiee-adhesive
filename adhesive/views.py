@@ -27,7 +27,7 @@ def json_get_for_object(request, object_id):
     data = {}
     try:
         pass
-    except Exception, e:
+    except Exception as e:
         return JSONResponse(e, status=404)
     return JSONResponse(data)
 
@@ -43,7 +43,7 @@ def json_get(request, id):
             data['info'] = note.info_text()
             data['note'] = note.note
             data['placement'] = note.placement
-    except Exception, e:
+    except Exception as e:
         return JSONResponse(e, status=404)
     return JSONResponse(data)
 
@@ -86,6 +86,6 @@ def delete(request, id):
             Note.objects.get(id=id).delete()
         else:
             return JSONResponse(data, status=401)
-    except Exception, e:
+    except Exception as e:
         return JSONResponse(e, status=404)
     return JSONResponse(data)

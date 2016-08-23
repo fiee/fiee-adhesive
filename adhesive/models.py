@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
+from __future__ import absolute_import
+from __future__ import unicode_literals
 from django.contrib.sessions.models import Session
 from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation
 from django.contrib.contenttypes.models import ContentType
 from django.db.models.signals import post_delete
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext as _
-from dorsale.models import DorsaleBaseModel
+from siteprofile.models import DorsaleBaseModel
 from django.db import models
 import logging
 # logger = logging.getLogger(__name__)
@@ -17,23 +19,23 @@ class Note(DorsaleBaseModel):
     """
     A generic model for adding simple, arbitrary notes to other models.
     """
-    note = models.TextField(_(u'Note'))
+    note = models.TextField(_('Note'))
     placement = models.CommaSeparatedIntegerField(
-        verbose_name=_(u'Placement'),
+        verbose_name=_('Placement'),
         max_length=23,
         default='600,100,100,60',
         blank=True,
-        help_text=_(u'x,y,width,height [px]'))
+        help_text=_('x,y,width,height [px]'))
 
-    content_type = models.ForeignKey(ContentType, verbose_name=_(u'content type'))
-    object_id = models.PositiveIntegerField(_(u'object id'))
+    content_type = models.ForeignKey(ContentType, verbose_name=_('content type'))
+    object_id = models.PositiveIntegerField(_('object id'))
     content_object = GenericForeignKey('content_type', 'object_id')
 
     class Meta:
         verbose_name = _('note')
         verbose_name_plural = _('notes')
         permissions = (
-            ('view_note', _(u'Can view note')),
+            ('view_note', _('Can view note')),
         )
 
     def __unicode__(self):
@@ -65,9 +67,9 @@ def delete_related_Notes(sender, **kwargs):
         return
     try:
         int(sender.pk)
-    except TypeError, e:
+    except TypeError as e:
         logger.warning(
-            u'fiee adhesive: %s: %s was deleted, but its PK is not an integer. Cannot look for and delete attached notes.', e, sender)
+            'fiee adhesive: %s: %s was deleted, but its PK is not an integer. Cannot look for and delete attached notes.', e, sender)
     else:
         sender_type = ContentType.objects.get_for_model(sender)
         Note.objects.filter(
