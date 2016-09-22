@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 import os
 
 setup(name='fiee-adhesive',
-      version='0.0.10',
+      version='0.0.11',
       description='Sticky notes for your (dorsale based) django models',
       keywords='sticky notes generic attachment',
       author='Henning Hraban Ramm',

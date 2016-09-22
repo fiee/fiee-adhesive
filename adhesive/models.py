@@ -8,6 +8,7 @@ from django.db.models.signals import post_delete
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext as _
 from django.utils.encoding import python_2_unicode_compatible
+from django.core.validators import validate_comma_separated_integer_list
 from siteprofile.models import DorsaleBaseModel
 from django.db import models
 import logging
@@ -22,12 +23,13 @@ class Note(DorsaleBaseModel):
     A generic model for adding simple, arbitrary notes to other models.
     """
     note = models.TextField(_('Note'))
-    placement = models.CommaSeparatedIntegerField(
+    placement = models.CharField(
         verbose_name=_('Placement'),
         max_length=23,
         default='600,100,100,60',
         blank=True,
-        help_text=_('x,y,width,height [px]'))
+        help_text=_('x,y,width,height [px]'),
+        validators=[validate_comma_separated_integer_list])
 
     content_type = models.ForeignKey(ContentType, verbose_name=_('content type'))
     object_id = models.PositiveIntegerField(_('object id'))
