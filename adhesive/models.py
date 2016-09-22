@@ -7,6 +7,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.db.models.signals import post_delete
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext as _
+from django.utils.encoding import python_2_unicode_compatible
 from siteprofile.models import DorsaleBaseModel
 from django.db import models
 import logging
@@ -15,6 +16,7 @@ from django.conf import settings
 logger = logging.getLogger(settings.PROJECT_NAME)
 
 
+@python_2_unicode_compatible
 class Note(DorsaleBaseModel):
     """
     A generic model for adding simple, arbitrary notes to other models.
@@ -38,7 +40,7 @@ class Note(DorsaleBaseModel):
             ('view_note', _('Can view note')),
         )
 
-    def __unicode__(self):
+    def __str__(self):
         return self.note
 
     def info_text(self):
