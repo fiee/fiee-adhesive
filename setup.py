@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 from __future__ import absolute_import
-from __future__ import unicode_literals
+# from __future__ import unicode_literals
 from setuptools import setup, find_packages
 import os
 
@@ -16,6 +16,7 @@ setup(name='fiee-adhesive',
       package_dir={'adhesive': 'adhesive',},
       packages=find_packages(),
       include_package_data = True,
+      # fails with unicode_literals
       package_data = {'': ['*.rst', 'locale/*/LC_MESSAGES/*.*', 'templates/*/*.*', 'templates/*/*/*.*', 'static/*/*/*.*']},
       # see http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=['Development Status :: 3 - Alpha',
